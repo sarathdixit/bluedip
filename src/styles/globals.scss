@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&family=DM+Serif+Display:ital@0;1&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  //   font-family: "DM Sans", sans-serif;
+  font-family: "DM Serif Display", serif;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.slick-slide > div {
+  // display: grid;
+  // place-items: center;
+  // width: 75%;
+  // margin-top: 50px;
+  margin: auto;
+  // height: 500px;
+  padding: 0px;
+  // background: red;
+}
