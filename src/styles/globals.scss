@@ -22,3 +22,7 @@ body {
   padding: 0px;
   // background: red;
 }
+
+input:focus {
+  outline: none !important;
+}

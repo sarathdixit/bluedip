@@ -13,36 +13,6 @@ export default function Takeaway() {
     slidesToScroll: 1,
     centerMode: true, // Center the items
     centerPadding: "0", // Adjust the padding as needed
-    // responsive: [
-    //   {
-    //     breakpoint: 1200, // Large screens
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768, // Medium screens
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 576, // Small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 0, // Extra-small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
   };
   const sliderRef = React.useRef();
   const goToPrevSlide = () => {
@@ -88,12 +58,12 @@ export default function Takeaway() {
       </section>
       <section className="py-10 ">
         <CustomImage
-          url="/assets/images/dinnein-section.svg"
+          url="/assets/images/section.svg"
           className="w-full h-[1597px] m-auto hidden lg:block"
         />
         <CustomImage
-          url="/assets/images/dinein-timeline-mobile.svg"
-          className="w-full h-[2068px] m-auto  lg:hidden"
+          url="/assets/images/take-away-section-mobile.svg"
+          className="w-full h-[1581px] m-auto  lg:hidden"
         />
       </section>
       <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
@@ -178,21 +148,21 @@ export default function Takeaway() {
         <div className="bg-[#FCF9F0] flex flex-col justify-between lg:flex-row mt-8 max-w-[1267px] m-auto px-[42px] py-[34px]">
           <div className="flex flex-col lg:flex-row gap-6">
             <CustomImage
-              url={"/assets/images/package.svg"}
+              url={"/assets/images/dinein-vector-icon.svg"}
               className="w-full lg:w-[180px] h-[220.489px] lg:h-[121px]"
             />
             <div>
               <p className="text-[40px] font-[400] leading-[47px] text-center lg:text-left">
-                Takeaway more revenue
+                Never an empty venue
               </p>
-              <p className="dm-sans text-center mt-4 lg:text-left">
-                Would love an increase in take-away orders? Our dynamic pricing
-                technology helps you do just that.
+              <p className="dm-sans text-center mt-4 max-w-[354px] lg:text-left">
+                Find out how our Dynamic Pricing Marketplace can help increase
+                your dine-in at days and times you want.
               </p>
             </div>
           </div>
           <div>
-            <Button title="Explore Dinein" BtnClassName="mt-5 min-w-[170px]" />
+            <Button title="Explore Dine in" BtnClassName="mt-5 min-w-[170px]" />
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import CustomImage from "@/modules/common/components/image/image";
 import React from "react";
 import Slider from "react-slick";
 
-export default function Takeaway() {
+export default function Dinein() {
   const settings = {
     dots: false, // Hide the dots
     arrows: false, // Hide the original arrows
@@ -13,36 +13,6 @@ export default function Takeaway() {
     slidesToScroll: 1,
     centerMode: true, // Center the items
     centerPadding: "0", // Adjust the padding as needed
-    // responsive: [
-    //   {
-    //     breakpoint: 1200, // Large screens
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768, // Medium screens
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 576, // Small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 0, // Extra-small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
   };
   const sliderRef = React.useRef();
   const goToPrevSlide = () => {
@@ -192,7 +162,10 @@ export default function Takeaway() {
             </div>
           </div>
           <div>
-            <Button title="Explore Dinein" BtnClassName="mt-5 min-w-[170px]" />
+            <Button
+              title="Explore TakeAway"
+              BtnClassName="mt-5 min-w-[170px]"
+            />
           </div>
         </div>
       </section>
