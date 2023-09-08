@@ -107,7 +107,7 @@ export default function Restaurant() {
           Calculate your revenue potential
         </p>
         <p className="dm-sans text-[#202937] text-[20px] text-center mt-5">
-          Based on our Marketplace data, of 1000's of restaurants
+          Based on our Marketplace data, of 1000&lsquo;s of restaurants
         </p>
         <div className="bg-[#F8F1DF] max-w-[930px] m-auto rounded-[20px]  mt-10 py-5 lg:py-[39px] px-4 lg:px-[66px]">
           <p className="text-[#202937] text-[32px] lg:text-[40px] lg:text-center">
