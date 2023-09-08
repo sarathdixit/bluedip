@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import Lottie from "lottie-react";
 import webjson from "../modules/home/json/web.json";
+import mobilejson from "../modules/home/json/mobile.json";
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
@@ -12,39 +13,35 @@ export default function Index() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     centerMode: true, // Center the items
     centerPadding: "0", // Adjust the padding as needed
-    // responsive: [
-    //   {
-    //     breakpoint: 1200, // Large screens
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768, // Medium screens
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 576, // Small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 0, // Extra-small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const sliderRef = React.useRef();
 
@@ -68,13 +65,19 @@ export default function Index() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        className="px-4 py-5"
       >
-        <div className="w-[602px] m-auto py-[60px]">
+        <div className="lg:w-[602px] m-auto lg:py-[60px]">
           <CustomImage
             url="/assets/images/herotext.svg"
-            className="w-[full] h-[148px]"
+            className="w-[full] h-[148px] hidden lg:block"
           />
-          <p className="px-[54px] text-center font-[400] mt-4 dm-sans text-[20px] text-[#202937]">
+          <CustomImage
+            url="/assets/images/mobile-heading.svg"
+            className="w-[full] h-[148px]  lg:hidden"
+          />
+
+          <p className=" lg:px-[54px] text-center font-[400] mt-3 lg:mt-4 dm-sans text-[20px] text-[#202937]">
             A mobile app that helps you discover local restuarants with
             exclusive offers throughout the day
           </p>
@@ -92,16 +95,24 @@ export default function Index() {
         <div className="m-auto relative">
           <CustomImage
             url="/assets/images/herosection.svg"
-            className="w-[1221px] h-[545px] m-auto"
+            className="w-[1221px] h-[545px] hidden lg:block m-auto"
+          />
+          <CustomImage
+            url="/assets/images/mobile-hero-section.svg"
+            className="w-[100%] h-[419px]  lg:hidden m-auto mt-8"
           />
           <CustomImage
             url="/assets/images/info.svg"
-            className="w-[1206px] h-[120px] m-auto  top-[60px]"
+            className="w-[1206px] h-[120px] m-auto hidden lg:block top-[60px]"
+          />
+          <CustomImage
+            url="/assets/images/mobile-info.svg"
+            className="w-[100%] h-[120px] m-auto lg:hidden  "
           />
         </div>
       </div>
-      <section>
-        <p className="mt-[120px] text-center text-[48px]">
+      <section className="px-4 py-5">
+        <p className="mt-[42px] lg:mt-[120px] text-center text-[32px] lg:text-[48px]">
           Over 500 Restaurants in Delhi
         </p>
         <div className="flex justify-center mt-4 gap-2">
@@ -149,7 +160,7 @@ export default function Index() {
             South
           </p>
         </div>
-        <div className="w-[1184px] mx-auto mt-[60px]">
+        <div className=" lg:w-[1184px] mx-auto mt-[32px] lg:mt-[60px]">
           <Slider {...settings} ref={sliderRef}>
             <CustomImage
               url="/assets/images/pizza.svg"
@@ -187,7 +198,7 @@ export default function Index() {
               />
             </div>
           </Slider>
-          <div className="flex gap-16 justify-center mt-12 pb-[100px]">
+          <div className="flex gap-8 lg:gap-16 justify-center mt-4 lg:mt-12 pb-[48px] lg:pb-[100px]">
             <div onClick={goToPrevSlide}>
               <CustomImage
                 url="/assets/images/saffron arrow lft.svg"
@@ -210,17 +221,17 @@ export default function Index() {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="py-[60px]"
+          className="lg:py-[60px] px-4 py-10"
         >
-          <p className="text-[48px] text-[#202937] text-center max-w-[500px] m-auto mb-[60px]">
+          <p className="text-[32px] lg:text-[48px] text-[#202937] text-center max-w-[500px] m-auto mb-[60px]">
             Exclusive offers in your pocket
           </p>
-          <div className="flex w-[1184px] gap-8 justify-between m-auto">
+          <div className="lg:flex lg:w-[1184px] gap-8 justify-between m-auto">
             <div>
               <div className="flex mt-4 gap-2">
                 <p
                   onClick={() => setActiveTab(1)}
-                  className={`text-[32px] font-[400]  px-4 pb-2 border-b-[2px] cursor-pointer ${
+                  className={`text-[20px] lg:text-[32px] font-[400]  px-4 pb-2 border-b-[2px] cursor-pointer ${
                     activeTab == 1
                       ? "border-b-[#D8B448] text-[#202937]"
                       : "border-b-transparent text-[#6A7079]"
@@ -231,7 +242,7 @@ export default function Index() {
                 <div className="w-[1px] h-[38px] mt-1 bg-[#6A7079]"></div>
                 <p
                   onClick={() => setActiveTab(2)}
-                  className={`text-[32px] font-[400]  px-4 border-b-[2px] cursor-pointer ${
+                  className={`text-[20px] lg:text-[32px] font-[400]  px-4 border-b-[2px] cursor-pointer ${
                     activeTab == 2
                       ? "border-b-[#D8B448] text-[#202937]"
                       : "border-b-transparent text-[#6A7079]"
@@ -240,7 +251,7 @@ export default function Index() {
                   Takeaway
                 </p>
               </div>
-              <p className="dm-sans text-[25px] text-[#202937] font-[400] mt-5">
+              <p className="dm-sans text-[16px] lg:text-[25px] text-[#202937] font-[400] mt-5">
                 Redeem a dine-in offer and enjoy up to 50% off your total bill,
                 including drinks!
               </p>
@@ -252,17 +263,17 @@ export default function Index() {
                   />
                 </div>
                 <div>
-                  <p className="dm-sans text-[20px] text-[#202937] mt-3">
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
                     Redeem a dine-in offer
                   </p>
                   <br />
                   <br />
-                  <p className="dm-sans text-[20px] text-[#202937] mt-1">
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
                     Eat, drink, have a great time
                   </p>
                   <br />
                   <br />
-                  <p className="dm-sans text-[20px] text-[#202937] mt-1">
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
                     Show your digital voucher to the venue on arrival and they
                     will apply the offer to the total bill at the end of your
                     meal.
@@ -273,14 +284,19 @@ export default function Index() {
             <div>
               <CustomImage
                 url="/assets/images/dinnin-bg.svg"
-                className="w-[576.347px] h-[504.421px] flex-1"
+                className="w-full lg:w-[576.347px] h-[504.421px] flex-1"
               />
             </div>
           </div>
         </div>
       </section>
       <section>
-        <Lottie animationData={webjson} loop={true} />
+        <Lottie
+          animationData={webjson}
+          loop={true}
+          className="hidden lg:block"
+        />
+        <Lottie animationData={mobilejson} loop={true} className=" lg:hidden" />
       </section>
     </main>
   );
