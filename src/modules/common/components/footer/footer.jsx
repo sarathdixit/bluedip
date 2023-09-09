@@ -46,17 +46,21 @@ export default function Footer() {
           </div>
           <div>
             <div>
-              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
+              <div className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
                 COMPANY
-              </span>
+              </div>
             </div>
             <div className="mt-4">
-              <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2">
-                Overview <ArrowRight size="20" color="#FFF" />
-              </div>
-              <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4">
-                What is dynamic Pricing <ArrowRight size="20" color="#FFF" />
-              </div>
+              <Link href={"/restaurant"}>
+                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2">
+                  Overview <ArrowRight size="20" color="#FFF" />
+                </div>
+              </Link>
+              <Link href={"/dynamic-pricing"}>
+                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4">
+                  What is dynamic Pricing <ArrowRight size="20" color="#FFF" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:block">
