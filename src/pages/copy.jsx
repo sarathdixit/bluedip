@@ -1,148 +1,127 @@
-import CustomImage from "@/modules/common/components/image/image";
 import React from "react";
-import Slider from "react-slick";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 export default function Takeaway() {
-  const settings = {
-    dots: false, // Hide the dots
-    arrows: false, // Hide the original arrows
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true, // Center the items
-    centerPadding: "0", // Adjust the padding as needed
-    // responsive: [
-    //   {
-    //     breakpoint: 1200, // Large screens
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768, // Medium screens
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 576, // Small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 0, // Extra-small screens
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
-  };
-  const sliderRef = React.useRef();
-  const goToPrevSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
-
-  const goToNextSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
   return (
-    <main>
-      <section
-        style={{
-          backgroundImage: 'url("/assets/images/Homebackground.svg")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="pb-[68px]"
-      >
-        <div className="w-[747px] m-auto py-[60px]">
-          <p className="text-center font-[400] mt-4  text-[62px] text-[#202937] leading-[74px]">
-            Boosting Revenue Through Strategic Takeaways
+    <div className="bg-black">
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="2011 - present"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
           </p>
-          <p className="text-center font-[400] mt-4 dm-sans text-[20px] text-[#202937]">
-            Increase takeaway revenue by posting offers and make sure customers
-            only order when you choose to drive extra sales.
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
           </p>
-        </div>
-        <div className="">
-          <CustomImage
-            url="/assets/images/takeaway-grid.svg"
-            className="w-[1036px] h-[120px] m-auto "
-          />
-        </div>
-      </section>
-      <section className="py-[120px]">
-        <CustomImage
-          url="/assets/images/section.svg"
-          className="w-full h-[1597px] m-auto "
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
+          </p>
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
+          </p>
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="2011 - present"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <p>
+            Creative Direction, User Experience, Visual Design, Project
+            Management, Team Leading
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2008 - 2010"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Los Angeles, CA
+          </h4>
+          <p>User Experience, Visual Design</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2006 - 2008"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            San Francisco, CA
+          </h4>
+          <p>User Experience, Visual Design</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="April 2013"
+          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Content Marketing for Web, Mobile and Social Media
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+          <p>Strategy, Social Media</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="November 2012"
+          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Agile Development Scrum Master
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+          <p>Creative Direction, User Experience, Visual Design</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2002 - 2006"
+          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          icon={<></>}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Bachelor of Science in Interactive Digital Media Visual Imaging
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Bachelor Degree
+          </h4>
+          <p>Creative Direction, Visual Design</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+          icon={<></>}
         />
-      </section>
-      <section className="bg-[#FCF9F0] py-[60px]">
-        <p className="text-center font-[400] text-[48px] w-[520px] m-auto text-[#202937] leading-[74px]">
-          Tap into a rapidly growing marketplace
-        </p>
-        <div className="bg-[#F9F4E5] w-[983px] m-auto mt-[60px] flex justify-between py-[32px] px-[48px]">
-          <div>
-            <p className="text-[#202937] text-[32px] text-center">283k</p>
-            <p className="text-[#6A7079] dm-sans text-[20px] text-center">
-              Monthly active customers
-            </p>
-          </div>
-          <div>
-            <p className="text-[#202937] text-[32px] text-center">10.34k</p>
-            <p className="text-[#6A7079] dm-sans text-[20px] text-center">
-              New customers every month
-            </p>
-          </div>
-          <div>
-            <p className="text-[#202937] text-[32px] text-center">283k</p>
-            <p className="text-[#6A7079] dm-sans text-[20px] text-center">
-              Average order value
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="pt-[120px] pb-[80px]">
-        <div>
-          <p className="text-center font-[400] text-[48px] w-[520px] m-auto text-[#202937] leading-[74px] mb-[60px]">
-            Our Reviews
-          </p>
-          <Slider {...settings} ref={sliderRef}>
-            <CustomImage
-              url="/assets/images/review.svg"
-              className="w-[1061px] h-[421px] m-auto "
-            />
-          </Slider>
-          <div className="flex gap-16 justify-center mt-12 pb-[100px]">
-            <div onClick={goToPrevSlide}>
-              <CustomImage
-                url="/assets/images/saffron arrow lft.svg"
-                className="w-[48px] h-[48px] cursor-pointer"
-              />
-            </div>
-            <div onClick={goToNextSlide}>
-              <CustomImage
-                url="/assets/images/saffron arrow rt.svg"
-                className="w-[48px] h-[48px]  cursor-pointer"
-              />
-            </div>
-          </div>
-        </div>
-        <CustomImage
-          url="/assets/images/never.svg"
-          className="w-[1061px] h-[189px] m-auto "
-        />
-      </section>
-    </main>
+      </VerticalTimeline>
+    </div>
   );
 }
