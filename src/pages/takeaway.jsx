@@ -1,5 +1,6 @@
 import Button from "@/modules/common/components/button/button";
 import CustomImage from "@/modules/common/components/image/image";
+import TakeAwayTimeline from "@/modules/common/components/takeawayTimeline";
 import React from "react";
 import Slider from "react-slick";
 
@@ -57,14 +58,7 @@ export default function Takeaway() {
         </div>
       </section>
       <section className="py-10 ">
-        <CustomImage
-          url="/assets/images/section.svg"
-          className="w-full h-[1597px] m-auto hidden lg:block"
-        />
-        <CustomImage
-          url="/assets/images/take-away-section-mobile.svg"
-          className="w-full h-[1581px] m-auto  lg:hidden"
-        />
+        <TakeAwayTimeline />
       </section>
       <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">

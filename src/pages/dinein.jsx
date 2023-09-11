@@ -1,4 +1,5 @@
 import Button from "@/modules/common/components/button/button";
+import DineInTimeline from "@/modules/common/components/dineinTimeline";
 import CustomImage from "@/modules/common/components/image/image";
 import React from "react";
 import Slider from "react-slick";
@@ -57,14 +58,7 @@ export default function Dinein() {
         </div>
       </section>
       <section className="py-10 ">
-        <CustomImage
-          url="/assets/images/dinnein-section.svg"
-          className="w-full h-[1597px] m-auto hidden lg:block"
-        />
-        <CustomImage
-          url="/assets/images/dinein-timeline-mobile.svg"
-          className="w-full h-[2068px] m-auto  lg:hidden"
-        />
+        <DineInTimeline />
       </section>
       <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">
