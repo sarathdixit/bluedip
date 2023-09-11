@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "./image/image";
@@ -39,7 +40,7 @@ export default function TakeAwayTimeline() {
           <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] lg:text-[50px]">
             Make your profit consistent with Bluedip
           </p>
-          <div className="relative h-full mt-6 pl-[56px]" id="info">
+          <div className="relative h-full mt-8 lg:mt-20 pl-[56px]" id="info">
             <div>
               <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px]">
                 <div className="mt-4 lg:mt-0">
@@ -164,10 +165,15 @@ export default function TakeAwayTimeline() {
             </div>
           </div>
         </div>
-        <CustomImage
+        {/* <CustomImage
           url="/assets/images/curve.svg"
           className=" w-[45%] h-[160px] lg:mb-[40px] relative left-[20.5px] lg:hidden"
           ObjectFit="none"
+        /> */}
+        <img
+          src="/assets/images/curve.svg"
+          alt=""
+          className="w-[45%] relative left-[1.28rem] lg:hidden"
         />
         <div className="bg-[#D8B448] h-[2px] w-[12.5%] m-auto"></div>
         <p className="dm-sans text-[20px] text-[#202937] mt-2 text-center">

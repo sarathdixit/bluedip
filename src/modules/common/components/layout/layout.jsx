@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <Header />
       </div>
       <div className="min-h-[100vh] pt-[72px]">{children}</div>
-      <Brand />
+      {/* <Brand /> */}
       <Footer />
     </div>
   );
