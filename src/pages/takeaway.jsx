@@ -167,7 +167,7 @@ export default function Takeaway() {
         }}
         className="py-[42px]"
       >
-        <p className="text-[20px] text-center text-white max-w-[714px] m-auto lg:text-[32px]">
+        <p className="text-[20px] px-4 text-center text-white max-w-[714px] m-auto lg:text-[32px]">
           Book your free consult and get personalised strategies from a Bluedip
           <span className="text-[#D8B448]"> Restaurant Consultant.</span>
         </p>
