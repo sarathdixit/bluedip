@@ -1,4 +1,5 @@
 import Button from "@/modules/common/components/button/button";
+import DineinGrid from "@/modules/common/components/dineinGrid";
 import DineInTimeline from "@/modules/common/components/dineinTimeline";
 import CustomImage from "@/modules/common/components/image/image";
 import React from "react";
@@ -47,20 +48,21 @@ export default function Dinein() {
           </p>
         </div>
         <div className="">
-          <CustomImage
+          {/* <CustomImage
             url="/assets/images/dinein-grid.svg"
             className="w-[1036px] h-[120px] m-auto hidden lg:block"
           />
           <CustomImage
             url="/assets/images/dinein-points.svg"
             className="w-[100%] h-[172px] m-auto  lg:hidden"
-          />
+          /> */}
+          <DineinGrid />
         </div>
       </section>
-      <section className="py-10 ">
+      <section className="py-[42px] lg:py-[120px]">
         <DineInTimeline />
       </section>
-      <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
+      {/* <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">
           Tap into a rapidly growing marketplace
         </p>
@@ -84,9 +86,9 @@ export default function Dinein() {
             </p>
           </div>
         </div>
-      </section>
-      <section className="py-[24px] lg:pt-[120px] px-4 lg:pb-[80px]">
-        <div>
+      </section> */}
+      <section className="px-4 pb-[48px] lg:pb-[120px]">
+        {/* <div>
           <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
             Our Reviews
           </p>
@@ -134,12 +136,9 @@ export default function Dinein() {
               />
             </div>
           </div>
-        </div>
-        {/* <CustomImage
-          url="/assets/images/never.svg"
-          className="lg:w-[1061px] h-[189px] m-auto "
-        /> */}
-        <div className="bg-[#FCF9F0] flex flex-col justify-between lg:flex-row mt-8 max-w-[1267px] m-auto px-[42px] py-[34px]">
+        </div> */}
+
+        <div className="bg-[#FCF9F0] flex flex-col justify-between lg:flex-row max-w-[1267px] m-auto px-[42px] py-[34px]">
           <div className="flex flex-col lg:flex-row gap-6">
             <CustomImage
               url={"/assets/images/package.svg"}
