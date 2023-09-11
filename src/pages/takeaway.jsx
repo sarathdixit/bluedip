@@ -87,7 +87,7 @@ export default function Takeaway() {
           </div>
         </div>
       </section> */}
-      <section className="px-4 lg:pb-[120px]">
+      <section className="px-4 pb-[48px] lg:pb-[120px]">
         {/* <div>
           <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
             Our Reviews
