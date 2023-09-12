@@ -19,12 +19,12 @@ export default function Footer() {
             url="/assets/images/logo-white.svg"
             className="w-[124px] h-[49px] m-auto lg:mr-auto lg:ml-0"
           />
-          <p className="text-[16px] font-[400] mt-4 text-center lg:text-left text-[#FEFEFC] dm-sans lg:w-[322px]">
+          <p className="text-[12.8px] lg:text-[16px] font-[400] mt-4 text-center lg:text-left text-[#FEFEFC] dm-sans lg:w-[322px]">
             A mobile app that helps you discover local restuarants with
             exclusive offers throughout the day
           </p>
         </div>
-        <div className="flex gap-6 lg:gap-20 mt-7">
+        <div className="flex justify-between gap-6 lg:gap-20 mt-7">
           <div>
             <div>
               <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
@@ -33,12 +33,12 @@ export default function Footer() {
             </div>
             <div className="mt-4">
               <Link href={"/takeaway"}>
-                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 cursor-pointer">
+                <div className="text-[12.8px] lg:text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 cursor-pointer">
                   Takeaway <ArrowRight size="20" color="#FFF" />
                 </div>
               </Link>
               <Link href={"/dinein"}>
-                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4 cursor-pointer">
+                <div className="text-[12.8px] lg:text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4 cursor-pointer">
                   Dine in <ArrowRight size="20" color="#FFF" />
                 </div>
               </Link>
@@ -46,18 +46,18 @@ export default function Footer() {
           </div>
           <div>
             <div>
-              <div className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
+              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
                 COMPANY
-              </div>
+              </span>
             </div>
             <div className="mt-4">
               <Link href={"/restaurant"}>
-                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2">
+                <div className="text-[12.8px] lg:text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2">
                   Overview <ArrowRight size="20" color="#FFF" />
                 </div>
               </Link>
               <Link href={"/dynamic-pricing"}>
-                <div className="text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4">
+                <div className="text-[12.8px] lg:text-[16px] font-[400] flex-1 text-[#FFF] dm-sans flex items-center gap-2 mt-4">
                   What is dynamic Pricing <ArrowRight size="20" color="#FFF" />
                 </div>
               </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:hidden mt-7">
+        <div className="lg:hidden mt-8">
           <div>
             <div className="text-[16px] font-[700] text-center w-[166px] m-auto text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
               DOWNLOAD OUR APP

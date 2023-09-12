@@ -95,23 +95,23 @@ export default function Index() {
         <div className="m-auto relative">
           <CustomImage
             url="/assets/images/herosection.svg"
-            className="w-[1221px] h-[545px] hidden lg:block m-auto"
+            className="w-[1221px] h-[545px] hidden lg:block m-auto mb-8"
           />
           <CustomImage
             url="/assets/images/mobile-hero-section.svg"
             className="w-[100%] h-[419px]  lg:hidden m-auto mt-8"
           />
-          <CustomImage
+          {/* <CustomImage
             url="/assets/images/info.svg"
             className="w-[1206px] h-[120px] m-auto hidden lg:block top-[60px]"
           />
           <CustomImage
             url="/assets/images/mobile-info.svg"
             className="w-[100%] h-[120px] m-auto lg:hidden  "
-          />
+          /> */}
         </div>
       </div>
-      <section className="px-4 py-5">
+      {/* <section className="px-4 py-5">
         <p className="mt-[42px] lg:mt-[120px] text-center text-[32px] lg:text-[48px]">
           Over 500 Restaurants in Delhi
         </p>
@@ -213,7 +213,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div
           style={{
@@ -221,9 +221,9 @@ export default function Index() {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="lg:py-[60px] px-4 py-10"
+          className="py-[42px] px-4  lg:py-[120px]"
         >
-          <p className="text-[32px] lg:text-[48px] text-[#202937] text-center max-w-[500px] m-auto mb-[60px]">
+          <p className="text-[32px] lg:text-[48px] text-[#202937] text-center max-w-[500px] m-auto mb-6 lg:mb-[48px]">
             Exclusive offers in your pocket
           </p>
           <div className="lg:flex lg:w-[1184px] gap-8 justify-between m-auto">
@@ -251,41 +251,83 @@ export default function Index() {
                   Takeaway
                 </p>
               </div>
-              <p className="dm-sans text-[16px] lg:text-[25px] text-[#202937] font-[400] mt-5">
-                Redeem a dine-in offer and enjoy up to 50% off your total bill,
-                including drinks!
-              </p>
-              <div className="flex mt-10 gap-7">
-                <div>
-                  <CustomImage
-                    url="/assets/images/vertical-timeline.svg"
-                    className="w-[50px] h-[224px]"
-                  />
-                </div>
-                <div>
-                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
-                    Redeem a dine-in offer
+              {activeTab == 1 ? (
+                <>
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] font-[400] mt-5">
+                    Redeem a dine-in offer and enjoy up to 50% off your total
+                    bill, including drinks!
                   </p>
-                  <br />
-                  <br />
-                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
-                    Eat, drink, have a great time
+                  <div className="flex mt-4 lg:mt-10 gap-7">
+                    <div>
+                      <CustomImage
+                        url="/assets/images/vertical-timeline.svg"
+                        className="w-[50px] h-[224px]"
+                      />
+                    </div>
+                    <div>
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
+                        Redeem a dine-in offer
+                      </p>
+                      <br />
+                      <br />
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                        Eat, drink, have a great time
+                      </p>
+                      <br />
+                      <br />
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
+                        Show your digital voucher to the venue on arrival and
+                        they will apply the offer to the total bill at the end
+                        of your meal.
+                      </p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] font-[400] mt-5">
+                    Order from your phone and choose your deals. Enjoy the food
+                    in the comfort of your own home.
                   </p>
-                  <br />
-                  <br />
-                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
-                    Show your digital voucher to the venue on arrival and they
-                    will apply the offer to the total bill at the end of your
-                    meal.
-                  </p>
-                </div>
-              </div>
+                  <div className="flex mt-10 gap-7">
+                    <div>
+                      <CustomImage
+                        url="/assets/images/vertical-timeline.svg"
+                        className="w-[50px] h-[224px]"
+                      />
+                    </div>
+                    <div>
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
+                        Redeem a takeaway offer
+                      </p>
+                      <br />
+                      <br />
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                        Select items from the menu
+                      </p>
+                      <br />
+                      <br />
+                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
+                        Secure checkout from your phone, with real-time updates
+                        to pick up your food when ready.
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
             <div>
-              <CustomImage
-                url="/assets/images/dinnin-bg.svg"
-                className="w-full lg:w-[576.347px] h-[504.421px] flex-1"
-              />
+              {activeTab == 1 ? (
+                <CustomImage
+                  url="/assets/images/dinnin-bg.svg"
+                  className="w-full lg:w-[576.347px] h-[294px] mt-4 lg:mt-0 lg:h-[504.421px] flex-1"
+                />
+              ) : (
+                <CustomImage
+                  url="/assets/images/home-tab-image-2.svg"
+                  className="w-full lg:w-[576.347px]  h-[294px] mt-4 lg:mt-0 lg:h-[504.421px] flex-1"
+                />
+              )}
             </div>
           </div>
         </div>

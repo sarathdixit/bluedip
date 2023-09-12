@@ -8,6 +8,10 @@ export default function Header() {
   const router = useRouter();
   const [isopen, setIsopen] = useState(false);
   console.log(router.pathname);
+  const handleNavigation = (route) => {
+    router.push(route);
+    setIsopen(false);
+  };
   return (
     <header className="h-[80px] w-full bg-white">
       <div className="text-center px-4  h-[100%] flex justify-between lg:justify-center items-center">
@@ -24,45 +28,82 @@ export default function Header() {
       </div>
       {isopen && (
         <div className=" bg-white px-[16px] py-[16px] lg:hidden min-h-screen z-30">
-          <Button
-            title="I’M A Restaurant"
-            BtnClassName=" !bg-transparent border border-[#CCAB57] !text-[#CCAB57]"
-          />
-          <div className="mt-6">
-            <div className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]">
-              <div className="flex items-center gap-2">
-                <p className="dm-sans text-[#31354A] font-[700]">Overview</p>
-                <ArrowRight size="20px" color="#000" />
+          {router.pathname == "/restaurant" ||
+          router.pathname == "/dynamic-pricing" ? (
+            <Button
+              title="I’M A Customer"
+              BtnClassName=" !bg-transparent border border-[#CCAB57] !text-[#CCAB57]"
+              cta={() => handleNavigation("/")}
+            />
+          ) : (
+            <Button
+              title="I’M A Restaurant"
+              BtnClassName=" !bg-transparent border border-[#CCAB57] !text-[#CCAB57]"
+              cta={() => handleNavigation("/restaurant")}
+            />
+          )}
+          {router.pathname != "/" && (
+            <>
+              <div className="mt-6">
+                <div
+                  className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]"
+                  onClick={() => handleNavigation("/restaurant")}
+                >
+                  <div className="flex items-center gap-2">
+                    <p className="dm-sans text-[#31354A] font-[700]">
+                      Overview
+                    </p>
+                    <ArrowRight size="20px" color="#000" />
+                  </div>
+                  <p className="text-[#6A7079] dm-sans">
+                    How Bluedip increases your venue’s profitability
+                  </p>
+                </div>
+                <div
+                  className="p-4 cursor-pointer hover:bg-[#FCF9F0]"
+                  onClick={() => handleNavigation("/takeaway")}
+                >
+                  <div className="flex items-center gap-2">
+                    <p className="dm-sans text-[#31354A] font-[700]">
+                      Takeaway
+                    </p>
+                    <ArrowRight size="20px" color="#000" />
+                  </div>
+                  <p className="text-[#6A7079] dm-sans">
+                    Drive more takeaway Revenue
+                  </p>
+                </div>
+                <div
+                  className="p-4  cursor-pointer hover:bg-[#FCF9F0]"
+                  onClick={() => handleNavigation("/dinein")}
+                >
+                  <div className="flex items-center gap-2">
+                    <p className="dm-sans text-[#31354A] font-[700]">Dine-in</p>
+                    <ArrowRight size="20px" color="#000" />
+                  </div>
+                  <p className="text-[#6A7079] dm-sans">
+                    Fill tables and create your dream ambience
+                  </p>
+                </div>
               </div>
-              <p className="text-[#6A7079] dm-sans">
-                How Bluedip increases your venue’s profitability
-              </p>
-            </div>
-            <div className="p-4 cursor-pointer hover:bg-[#FCF9F0]">
-              <div className="flex items-center gap-2">
-                <p className="dm-sans text-[#31354A] font-[700]">Takeaway</p>
-                <ArrowRight size="20px" color="#000" />
+              <div
+                className="px-[16px] py-[16px] border-y-[1px] border-[#E7D7AB] mt-3"
+                onClick={() => handleNavigation("/dynamic-pricing")}
+              >
+                <div className="flex items-center gap-2">
+                  <p className="dm-sans text-[#31354A] font-[700]">
+                    How it works
+                  </p>
+                  <ArrowRight size="20px" color="#000" />
+                </div>
               </div>
-              <p className="text-[#6A7079] dm-sans">
-                Drive more takeaway Revenue
-              </p>
-            </div>
-            <div className="p-4  cursor-pointer hover:bg-[#FCF9F0]">
-              <div className="flex items-center gap-2">
-                <p className="dm-sans text-[#31354A] font-[700]">Dine-in</p>
-                <ArrowRight size="20px" color="#000" />
-              </div>
-              <p className="text-[#6A7079] dm-sans">
-                Fill tables and create your dream ambience
-              </p>
-            </div>
-          </div>
-          <div className="px-[16px] py-[16px] border-y-[1px] border-[#E7D7AB] mt-3">
-            <div className="flex items-center gap-2">
-              <p className="dm-sans text-[#31354A] font-[700]">How it works</p>
-              <ArrowRight size="20px" color="#000" />
-            </div>
-          </div>
+            </>
+          )}
+
+          {/* {router.pathname != "/" && (
+            <div className="h-[1px] bg-[#CCAB57] mt-10"></div>
+          )} */}
+
           <div className="px-[16px] py-[16px] mt-3">
             <div>
               <p className="dm-sans text-[#31354A] text-[16px] font-[700]">
@@ -102,7 +143,10 @@ export default function Header() {
             {isopen && (
               <>
                 <div className="absolute bg-white w-[42%] top-[68px] px-[16px] py-[16px] ">
-                  <div className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]">
+                  <div
+                    className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]"
+                    onClick={() => handleNavigation("/restaurant")}
+                  >
                     <div className="flex items-center gap-2">
                       <p className="dm-sans text-[#31354A] font-[700]">
                         Overview
@@ -113,7 +157,10 @@ export default function Header() {
                       How Bluedip increases your venue’s profitability
                     </p>
                   </div>
-                  <div className="p-4 cursor-pointer hover:bg-[#FCF9F0]">
+                  <div
+                    className="p-4 cursor-pointer hover:bg-[#FCF9F0]"
+                    onClick={() => handleNavigation("/takeaway")}
+                  >
                     <div className="flex items-center gap-2">
                       <p className="dm-sans text-[#31354A] font-[700]">
                         Takeaway
@@ -124,7 +171,10 @@ export default function Header() {
                       Drive more takeaway Revenue
                     </p>
                   </div>
-                  <div className="p-4  cursor-pointer hover:bg-[#FCF9F0]">
+                  <div
+                    className="p-4  cursor-pointer hover:bg-[#FCF9F0]"
+                    onClick={() => handleNavigation("/dinein")}
+                  >
                     <div className="flex items-center gap-2">
                       <p className="dm-sans text-[#31354A] font-[700]">
                         Dine-in
@@ -136,41 +186,6 @@ export default function Header() {
                     </p>
                   </div>
                 </div>
-                {/* <div className=" bg-white px-[16px] py-[16px] lg:hidden min-h-screen z-30">
-                  <div className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]">
-                    <div className="flex items-center gap-2">
-                      <p className="dm-sans text-[#31354A] font-[700]">
-                        Overview
-                      </p>
-                      <ArrowRight size="20px" color="#000" />
-                    </div>
-                    <p className="text-[#6A7079] dm-sans">
-                      How Bluedip increases your venue’s profitability
-                    </p>
-                  </div>
-                  <div className="p-4 cursor-pointer hover:bg-[#FCF9F0]">
-                    <div className="flex items-center gap-2">
-                      <p className="dm-sans text-[#31354A] font-[700]">
-                        Takeaway
-                      </p>
-                      <ArrowRight size="20px" color="#000" />
-                    </div>
-                    <p className="text-[#6A7079] dm-sans">
-                      Drive more takeaway Revenue
-                    </p>
-                  </div>
-                  <div className="p-4  cursor-pointer hover:bg-[#FCF9F0]">
-                    <div className="flex items-center gap-2">
-                      <p className="dm-sans text-[#31354A] font-[700]">
-                        Dine-in
-                      </p>
-                      <ArrowRight size="20px" color="#000" />
-                    </div>
-                    <p className="text-[#6A7079] dm-sans">
-                      Fill tables and create your dream ambience
-                    </p>
-                  </div>
-                </div> */}
               </>
             )}
           </div>
