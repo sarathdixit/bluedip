@@ -67,17 +67,17 @@ export default function Index() {
         }}
         className="px-4 py-5"
       >
-        <div className="lg:w-[602px] m-auto lg:py-[60px]">
+        <div className="lg:w-[680px] m-auto lg:py-[20px]">
           <CustomImage
             url="/assets/images/herotext.svg"
-            className="w-[full] h-[148px] hidden lg:block"
+            className="w-[full] h-[188px] hidden lg:block"
           />
           <CustomImage
             url="/assets/images/mobile-heading.svg"
             className="w-[full] h-[148px]  lg:hidden"
           />
 
-          <p className=" lg:px-[54px] text-center font-[400] mt-3 lg:mt-4 dm-sans text-[20px] text-[#202937]">
+          <p className=" lg:px-[54px] text-center font-[500] mt-3 lg:mt-4 dm-sans text-[20px] text-[#202937]">
             A mobile app that helps you discover local restuarants with
             exclusive offers throughout the day
           </p>
@@ -221,17 +221,17 @@ export default function Index() {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="py-[42px] px-4  lg:py-[120px]"
+          className="py-[42px] px-4  lg:py-[80px]"
         >
-          <p className="text-[32px] lg:text-[48px] text-[#202937] text-center max-w-[500px] m-auto mb-6 lg:mb-[48px]">
+          <p className="text-[32px] lg:text-[48px] text-[#202937] text-center max-w-[500px] m-auto lg:leading-[52px] mb-6 lg:mb-[32px]">
             Exclusive offers in your pocket
           </p>
           <div className="lg:flex lg:w-[1184px] gap-8 justify-between m-auto">
             <div>
-              <div className="flex mt-4 gap-2">
+              <div className="flex mt-4 gap-5">
                 <p
                   onClick={() => setActiveTab(1)}
-                  className={`text-[20px] lg:text-[32px] font-[400]  px-4 pb-2 border-b-[2px] cursor-pointer ${
+                  className={`text-[20px] lg:text-[32px] font-[400]    border-b-[2px] cursor-pointer ${
                     activeTab == 1
                       ? "border-b-[#D8B448] text-[#202937]"
                       : "border-b-transparent text-[#6A7079]"
@@ -239,10 +239,10 @@ export default function Index() {
                 >
                   Dine-in
                 </p>
-                <div className="w-[1px] h-[38px] mt-1 bg-[#6A7079]"></div>
+                <div className="w-[1px] h-[32px] my-auto  bg-[#6A7079]"></div>
                 <p
                   onClick={() => setActiveTab(2)}
-                  className={`text-[20px] lg:text-[32px] font-[400]  px-4 border-b-[2px] cursor-pointer ${
+                  className={`text-[20px] lg:text-[32px] font-[400] border-b-[2px] cursor-pointer ${
                     activeTab == 2
                       ? "border-b-[#D8B448] text-[#202937]"
                       : "border-b-transparent text-[#6A7079]"
@@ -253,7 +253,7 @@ export default function Index() {
               </div>
               {activeTab == 1 ? (
                 <>
-                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] font-[400] mt-5">
+                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] font-[500] mt-5">
                     Redeem a dine-in offer and enjoy up to 50% off your total
                     bill, including drinks!
                   </p>
@@ -265,17 +265,17 @@ export default function Index() {
                       />
                     </div>
                     <div>
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-3">
                         Redeem a dine-in offer
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
                         Eat, drink, have a great time
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-1">
                         Show your digital voucher to the venue on arrival and
                         they will apply the offer to the total bill at the end
                         of your meal.
@@ -285,8 +285,8 @@ export default function Index() {
                 </>
               ) : (
                 <>
-                  <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] font-[400] mt-5">
-                    Order from your phone and choose your deals. Enjoy the food
+                  <p className="dm-sans text-[16px]  lg:text-[20px] text-[#202937] font-[500] mt-5">
+                    Choose your deals and Order from your phone . Enjoy the food
                     in the comfort of your own home.
                   </p>
                   <div className="flex mt-10 gap-7">
@@ -297,17 +297,17 @@ export default function Index() {
                       />
                     </div>
                     <div>
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-3">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-3">
                         Redeem a takeaway offer
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
                         Select items from the menu
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-1">
                         Secure checkout from your phone, with real-time updates
                         to pick up your food when ready.
                       </p>

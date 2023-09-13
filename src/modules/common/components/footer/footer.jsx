@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="lg:flex items-center justify-between py-8 border-t  border-t-[#D9D9D92B]">
+      <div className="lg:flex items-center justify-between border-t  border-t-[#D9D9D92B]">
         <p className="text-[16px] font-[400] text-center lg:text-left flex-1 text-[#FFF] dm-sans">
           © 2023 Bluedip
         </p>

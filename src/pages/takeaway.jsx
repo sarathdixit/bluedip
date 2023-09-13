@@ -145,7 +145,7 @@ export default function Takeaway() {
               className="w-full lg:w-[180px] h-[220.489px] lg:h-[121px]"
             />
             <div>
-              <p className="text-[40px] font-[400] leading-[47px] text-center lg:text-left">
+              <p className="text-[32px] lg:text-[40px] font-[400] leading-[47px] text-center lg:text-left">
                 Never an empty venue
               </p>
               <p className="dm-sans text-center mt-4 max-w-[354px] lg:text-left">
@@ -161,24 +161,21 @@ export default function Takeaway() {
       </section>
       <section
         style={{
-          backgroundImage: 'url("/assets/images/email-bg.svg")',
+          backgroundImage: 'url("/assets/images/footerbackground.svg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
         className="py-[42px]"
       >
-        <p className="text-[20px] px-4 text-center text-white max-w-[714px] m-auto lg:text-[32px]">
+        <p className="text-[20px] px-4 text-center text-white max-w-[726px] m-auto lg:text-[32px]">
           Book your free consult and get personalised strategies from a Bluedip
           <span className="text-[#D8B448]"> Restaurant Consultant.</span>
         </p>
-        <div className="bg-[#4B586C] w-[90%] max-w-[429px] m-auto flex justify-between rounded-[100px] px-[13px] py-[9px] mt-[36px]">
-          <input
-            type="text"
-            placeholder="Enter your email"
-            className="bg-transparent hover:border-[transparent] pl-4 flex-1 w-[40%] lg:w-[100%] placeholder:text-[#fff]  "
-          />
-          <Button title="Get Started" BtnClassName="w-[136px]" />
-        </div>
+        <Button
+          title="Get Started"
+          BtnClassName="w-[136px] m-auto mt-6"
+          cta={() => window.open("https://forms.gle/BdwnMgXne14QUSvf7")}
+        />
       </section>
     </main>
   );

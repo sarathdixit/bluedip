@@ -47,7 +47,7 @@ export default function TakeAwayTimeline() {
                   <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
                     Post exclusive offers to a world of new customers
                   </p>
-                  <p className="dm-sans text-[#4D545F] text-[20px] mt-4">
+                  <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-4">
                     Tailor offers to suit your business by setting the day, time
                     & offer percentage. See real-time predictions on how many
                     customers and revenue you’re likely to receive.
@@ -65,7 +65,7 @@ export default function TakeAwayTimeline() {
                   />
                 </div>
               </div>
-              <div className="lg:mt-20 flex flex-col lg:flex-row lg:gap-[90px] mt-6">
+              <div className="lg:mt-20 flex flex-col lg:flex-row lg:gap-[90px] mt-12">
                 <div className=" flex lg:hidden bg-[#FCF9F0] w-[58px] h-[58px]  justify-center items-center rounded-full absolute left-[-6px] lg:left-[-108px] z-10">
                   <div className="text-[25px] bg-[#F8F1DF] w-[44px] h-[44px] flex justify-center items-center rounded-full">
                     02
@@ -87,7 +87,7 @@ export default function TakeAwayTimeline() {
                     <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
                       Discreet & operationally seamless experience
                     </p>
-                    <p className="dm-sans text-[#4D545F] text-[20px] mt-4">
+                    <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-4">
                       View an incoming order, select how long you need to
                       prepare and easily print the order straight to your
                       kitchen.
@@ -133,12 +133,12 @@ export default function TakeAwayTimeline() {
                   </div>
                 </div>
               </div>
-              <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px] mt-6 ">
+              <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px] mt-12 ">
                 <div className="mt-4 lg:mt-0">
                   <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
                     Control seamlessly from a central location
                   </p>
-                  <p className="dm-sans text-[#4D545F] text-[20px] mt-4  lg:mb-0">
+                  <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-4  lg:mb-0">
                     Manage your menu, mark items out of stock, update your
                     offers or temporarily put things on pause, all from the
                     convenience of our apps.
