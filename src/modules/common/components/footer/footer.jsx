@@ -15,10 +15,12 @@ export default function Footer() {
     >
       <div className="lg:flex  lg:justify-between mb-12">
         <div>
-          <CustomImage
-            url="/assets/images/logo-white.svg"
-            className="w-[124px] h-[49px] m-auto lg:mr-auto lg:ml-0"
-          />
+          <Link href={"/"}>
+            <CustomImage
+              url="/assets/images/logo-white.svg"
+              className="w-[124px] h-[49px] m-auto lg:mr-auto lg:ml-0"
+            />
+          </Link>
           <p className="text-[12.8px] lg:text-[16px] font-[400] mt-4 text-center lg:text-left text-[#FEFEFC] dm-sans lg:w-[322px]">
             A mobile app that helps you discover local restuarants with
             exclusive offers throughout the day

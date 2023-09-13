@@ -144,7 +144,7 @@ export default function OverViewTimeline() {
               <div className="lg:mt-20 flex flex-col lg:flex-row lg:gap-[90px] mt-12">
                 <div className=" flex lg:hidden bg-[#FCF9F0] w-[58px] h-[58px]  justify-center items-center rounded-full absolute left-[-6px] lg:left-[-108px] z-10">
                   <div className="text-[25px] bg-[#F8F1DF] w-[44px] h-[44px] flex justify-center items-center rounded-full">
-                    02
+                    04
                   </div>
                 </div>
                 <div className="mt-4 lg:mt-0">

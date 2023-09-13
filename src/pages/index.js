@@ -2,8 +2,8 @@ import CustomImage from "@/modules/common/components/image/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Lottie from "lottie-react";
-import webjson from "../modules/home/json/web.json";
-import mobilejson from "../modules/home/json/mobile.json";
+import webjson from "../modules/home/json/season.json";
+import mobilejson from "../modules/home/json/season mobile.json";
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);

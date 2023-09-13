@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from "@/modules/common/components/button/button";
 import CustomImage from "@/modules/common/components/image/image";
 import React from "react";
@@ -45,22 +46,36 @@ export default function Pricing() {
             to make you a profitable and thriving hospitality venue.
           </p>
         </div>
-        <div className="">
-          <CustomImage
-            url="/assets/images/dinein-grid.svg"
-            className="w-[1036px] h-[120px] m-auto hidden lg:block"
-          />
-          <CustomImage
-            url="/assets/images/dinein-points.svg"
-            className="w-[100%] h-[172px] m-auto  lg:hidden"
-          />
+        <div className="bg-white py-3 px-4 max-w-[905px] m-auto rounded-lg flex justify-center">
+          <div className="flex flex-col gap-1 lg:gap-8 lg:!flex-row  justify-evenly lg:items-center">
+            <div className="flex items-center gap-3 max-w-[500px]">
+              <img src="/assets/images/dinein-grid-image1.svg" alt="" />
+              <p className="text-[16px] lg:text-[32px]">
+                Book your free consult today
+              </p>
+            </div>
+            <div>
+              <Button
+                title="Get Started"
+                BtnClassName=" !bg-[#CCAB57] border lg:w-[200px]"
+                cta={() => handleNavigation("/")}
+              />
+            </div>
+          </div>
         </div>
       </section>
-      <section className=" py-10 lg:py-[60px] px-4">
-        <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">
+      <section
+        className=" pt-10 lg:py-[60px] px-4"
+        style={{
+          backgroundImage: 'url("/assets/images/image 16.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[58px]">
           What is dynamic Pricing?
         </p>
-        <p className="max-w-[725px] m-auto text-center dm-sans text-[#202937] mt-12">
+        <p className="max-w-[725px] m-auto text-center dm-sans text-[16px] lg:text-[20px] text-[#202937] mt-4">
           Dynamic pricing is a long-standing strategy used by airlines and
           hotels to maximize revenue. The platform utilizes flexible pricing to
           attract customers during off-peak hours. The goal is to maintain
@@ -76,18 +91,18 @@ export default function Pricing() {
           className="w-[100%] h-[216px] m-auto mt-12 lg:hidden"
         />
       </section>
-      <section className="px-4 lg:py-20">
+      <section className="px-4">
         <CustomImage
           url="/assets/images/dynamic-section.svg"
-          className="w-[1203px] h-[1049px] m-auto mt-12 hidden lg:block"
+          className="w-[1203px] h-[1049px] m-auto mt-0 hidden lg:block"
         />
         <CustomImage
           url="/assets/images/dynamic-section-mobile.svg"
-          className="w-[full] h-[1080px] m-auto mt-12 lg:hidden"
+          className="w-[full] h-[1080px] m-auto mt-2 lg:hidden"
         />
         <CustomImage
           url="/assets/images/dynamic-final-section.svg"
-          className="w-[1203px] h-[769px] m-auto mt-12 hidden lg:block"
+          className="w-[1203px] h-[769px] m-auto my-20 hidden lg:block"
         />
         <CustomImage
           url="/assets/images/dynamic-final-section-mobile.svg"

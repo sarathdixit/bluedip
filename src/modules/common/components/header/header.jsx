@@ -3,6 +3,7 @@ import CustomImage from "../image/image";
 import Button from "../button/button";
 import { useRouter } from "next/router";
 import { ArrowDown2, ArrowRight } from "iconsax-react";
+import Link from "next/link";
 
 export default function Header() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function Header() {
         />
         <div onClick={() => setIsopen((prev) => !prev)}>
           <CustomImage
-            url="/assets/images/menu.svg"
+            url={`/assets/images/${!isopen ? "menu" : "close"}.svg`}
             className="w-[36px] h-[36px] lg:hidden"
           />
         </div>
@@ -131,18 +132,42 @@ export default function Header() {
                 className="flex gap-1 cursor-pointer"
                 onClick={() => setIsopen((prev) => !prev)}
               >
-                <p className="border-b-[2px]  border-[#D8B448] text-center text-[16px] font-[600] dm-sans pb-1">
+                <p
+                  className={`border-b-[2px]  text-center text-[16px] font-[600] dm-sans pb-1 ${
+                    router.pathname == "/dynamic-pricing"
+                      ? "border-transparent"
+                      : "border-[#D8B448]"
+                  }`}
+                >
                   Solutions
                 </p>
                 <div className="mt-1">
                   <ArrowDown2 size="16px" color="#D8B448" />
                 </div>
               </div>
-              <p className="dm-sans text-[#31354A] font-[700]">How it Works</p>
+              <Link href={"dynamic-pricing"}>
+                <div className="flex gap-1 cursor-pointer">
+                  <p
+                    className={`border-b-[2px]  text-center text-[16px] font-[600] dm-sans pb-1 ${
+                      router.pathname != "/dynamic-pricing"
+                        ? "border-transparent"
+                        : "border-[#D8B448]"
+                    }`}
+                    onClick={() => handleNavigation("/dynamic-pricing")}
+                  >
+                    How it Works
+                  </p>
+                </div>
+              </Link>
             </div>
             {isopen && (
               <>
-                <div className="absolute bg-white w-[42%] top-[68px] px-[16px] py-[16px] ">
+                <div
+                  className="absolute bg-white w-[42%] top-[68px] px-[16px] py-[16px] "
+                  style={{
+                    boxShadow: "0px 16px 80px 0px rgba(127, 127, 126, 0.07)",
+                  }}
+                >
                   <div
                     className="cursor-pointer py-4 px-[16px] hover:bg-[#FCF9F0]"
                     onClick={() => handleNavigation("/restaurant")}
