@@ -37,7 +37,7 @@ export default function TakeAwayTimeline() {
     <>
       <div className="lg:w-[1128px] m-auto px-4">
         <div>
-          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] lg:text-[50px]">
+          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] leading-[64px] lg:text-[50px]">
             Make your profit consistent with Bluedip
           </p>
           <div className="relative h-full mt-8 lg:mt-20 pl-[56px]" id="info">

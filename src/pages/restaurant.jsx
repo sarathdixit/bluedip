@@ -1,6 +1,8 @@
 import Button from "@/modules/common/components/button/button";
 import Faq from "@/modules/common/components/faq/faq";
 import CustomImage from "@/modules/common/components/image/image";
+import OverviewGird from "@/modules/common/components/overviewGrid";
+import OverViewTimeline from "@/modules/common/components/overviewTimeline";
 import Select from "@/modules/common/components/select/select";
 import React from "react";
 import Slider from "react-slick";
@@ -66,7 +68,7 @@ export default function Restaurant() {
       >
         <div className="lg:w-[747px] m-auto py-[36px] lg:py-[60px]">
           <p className="text-center font-[400] mt-4 text-[40px] lg:text-[62px] text-[#202937] leading-[47px] lg:leading-[74px]">
-            AI-Powered Solution for Restaurant Success{" "}
+            AI-Powered Solution for Restaurant Success
           </p>
           <p className="text-center font-[400] mt-4 dm-sans text-[20px] text-[#202937]">
             Attract a vast audience of food enthusiasts nationwide and leverage
@@ -74,28 +76,14 @@ export default function Restaurant() {
           </p>
         </div>
         <div className="">
-          <CustomImage
-            url="/assets/images/restaurant.svg"
-            className="w-[1036px] h-[120px] m-auto hidden lg:block"
-          />
-          <CustomImage
-            url="/assets/images/Restaurant-mobile-grid.svg"
-            className="w-[100%] h-[172px] m-auto  lg:hidden"
-          />
+          <OverviewGird />
         </div>
       </section>
-      <section className="pt-10 ">
-        <CustomImage
-          url="/assets/images/Restaurant-timeline-section.svg"
-          className="w-full h-[1918px] m-auto hidden lg:block"
-        />
-        <CustomImage
-          url="/assets/images/Restaurant-timeline-section-mobile.svg"
-          className="w-full h-[2049px] m-auto  lg:hidden"
-        />
+      <section className="py-[42px] lg:py-[120px]">
+        <OverViewTimeline />
       </section>
 
-      <section
+      {/* <section
         style={{
           backgroundImage: 'url("/assets/images/Restaurant-frame.svg")',
           backgroundSize: "cover",
@@ -150,8 +138,8 @@ export default function Restaurant() {
             BtnClassName={"max-w-[263px] m-auto mt-10"}
           />
         </div>
-      </section>
-      <section className="py-[24px] max-w-[1250px] m-auto lg:pt-[80px] px-4 ">
+      </section> */}
+      {/* <section className="py-[24px] max-w-[1250px] m-auto lg:pt-[80px] px-4 ">
         <div>
           <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
             Case studies from live venues
@@ -193,8 +181,8 @@ export default function Restaurant() {
             className="w-[100%] h-[468px] m-auto cursor-pointer lg:hidden"
           />
         </div>
-      </section>
-      <section className="my-[140px] max-w-[1195px] px-4 m-auto">
+      </section> */}
+      <section className="mb-[140px] max-w-[1195px] px-4 m-auto">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
           Frequently asked Questions
         </p>

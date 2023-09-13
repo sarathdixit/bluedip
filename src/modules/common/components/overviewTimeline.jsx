@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "./image/image";
+import { ArrowRight } from "iconsax-react";
+import Link from "next/link";
 
-export default function DineInTimeline() {
+export default function OverViewTimeline() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -15,7 +17,7 @@ export default function DineInTimeline() {
         // Element is in view
         const scrollPercentage =
           ((window.innerHeight - boundingBox.top) / window.innerHeight) * 100 -
-          70;
+          80;
         if (scrollPercentage >= 100) {
           setScrollProgress(100);
         } else {
@@ -37,21 +39,32 @@ export default function DineInTimeline() {
     <>
       <div className="lg:w-[1128px] m-auto px-4">
         <div>
-          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px]  leading-[64px] lg:text-[50px]">
-            Make your profit consistent with Bluedip
+          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px]  !lg:leading-[64px] lg:text-[50px]">
+            Create Demand, Maximize Profits, Fill Tables Instantly
           </p>
           <div className="relative h-full mt-8 lg:mt-20 pl-[56px]" id="info">
             <div>
               <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px]">
                 <div className="mt-4 lg:mt-0">
                   <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
-                    Post exclusive offers to a world of new customers
+                    More customers at the right times
                   </p>
                   <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-2">
-                    Tailor offers to suit your business by setting the day, time
-                    & offer percentage. See real-time predictions on how many
-                    customers and revenue you’re likely to receive.
+                    Choose how many takeaway customers you want and exactly when
+                    you want them. Optimise your kitchen output and maximise
+                    your revenue.
                   </p>
+                  <Link href={"/takeaway"}>
+                    <div
+                      className="flex items-center gap-2 underline mt-2"
+                      style={{ textDecorationColor: "#D8B448" }}
+                    >
+                      <p className="text-[#D8B448] dm-sans text-[16px] font-[700]">
+                        Explore Takeaway
+                      </p>
+                      <ArrowRight size="20" stroke="" color="#D8B448" />
+                    </div>
+                  </Link>
                 </div>
                 <div className="relative">
                   <div className=" bg-[#FCF9F0] w-[58px] h-[58px] flex justify-center items-center rounded-full absolute left-[-62px] lg:left-[-96px] z-10">
@@ -60,7 +73,7 @@ export default function DineInTimeline() {
                     </div>
                   </div>
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image1.svg"
+                    url="/assets/images/overview-timeline-image1.svg"
                     className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
                   />
                 </div>
@@ -73,7 +86,7 @@ export default function DineInTimeline() {
                 </div>
                 <div className="mt-4 lg:mt-0">
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image2.svg"
+                    url="/assets/images/overview-timeline-image2.svg"
                     className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
                   />
                 </div>
@@ -85,63 +98,35 @@ export default function DineInTimeline() {
                   </div>
                   <div>
                     <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
-                      Discreet & operationally seamless experience
+                      Fill spare tables during off-peak hours
                     </p>
                     <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px]  mt-2">
-                      View an incoming order, select how long you need to
-                      prepare and easily print the order straight to your
-                      kitchen.
+                      Build atmosphere, attract more walk-ins and make a profit
+                      on tables that would have gone empty.
                     </p>
-                    <div className="mt-4">
-                      <div className="flex gap-2 items-center">
-                        <CustomImage
-                          url="/assets/images/tick.svg"
-                          className=" w-[22px] h-[22px]"
-                        />
-                        <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Customer redeems your offer
+                    <Link href={"/dinein"}>
+                      <div
+                        className="flex items-center gap-2 underline mt-2"
+                        style={{ textDecorationColor: "#D8B448" }}
+                      >
+                        <p className="text-[#D8B448] dm-sans text-[16px] font-[700]">
+                          Explore dine-in
                         </p>
+                        <ArrowRight size="20" stroke="" color="#D8B448" />
                       </div>
-                      <div className="flex gap-2 items-center mt-2">
-                        <CustomImage
-                          url="/assets/images/tick.svg"
-                          className=" w-[22px] h-[22px]"
-                        />
-                        <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Arrives & enjoys their meal
-                        </p>
-                      </div>
-                      <div className="flex gap-2 items-center mt-2">
-                        <CustomImage
-                          url="/assets/images/tick.svg"
-                          className=" w-[22px] h-[22px]"
-                        />
-                        <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Shows the voucher to avail the offer
-                        </p>
-                      </div>
-                      <div className="flex gap-2 items-center mt-2">
-                        <CustomImage
-                          url="/assets/images/tick.svg"
-                          className=" w-[22px] h-[22px]"
-                        />
-                        <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Taps & pays with their digital card
-                        </p>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px] mt-12 ">
                 <div className="mt-4 lg:mt-0">
                   <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
-                    Control seamlessly from a central location
+                    Bye-bye commissions, hello profits!
                   </p>
                   <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px]  mt-2  lg:mb-0">
-                    Manage your menu, mark items out of stock, update your
-                    offers or temporarily put things on pause, all from the
-                    convenience of our apps.
+                    Say goodbye to high commission fees and hello to increased
+                    profits with Bluedip. Keep more money in your pocket and
+                    less on the table!
                   </p>
                 </div>
                 <div className="relative">
@@ -151,9 +136,39 @@ export default function DineInTimeline() {
                     </div>
                   </div>
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image3.svg"
+                    url="/assets/images/overview-timeline-image3.svg"
                     className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] lg:mb-[40px]"
                   />
+                </div>
+              </div>
+              <div className="lg:mt-20 flex flex-col lg:flex-row lg:gap-[90px] mt-12">
+                <div className=" flex lg:hidden bg-[#FCF9F0] w-[58px] h-[58px]  justify-center items-center rounded-full absolute left-[-6px] lg:left-[-108px] z-10">
+                  <div className="text-[25px] bg-[#F8F1DF] w-[44px] h-[44px] flex justify-center items-center rounded-full">
+                    02
+                  </div>
+                </div>
+                <div className="mt-4 lg:mt-0">
+                  <CustomImage
+                    url="/assets/images/overview-timeline-image4.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
+                  />
+                </div>
+                <div className="relative mt-[35px] lg:mt-0">
+                  <div className=" hidden lg:flex bg-[#FCF9F0] w-[58px] h-[58px]  justify-center items-center rounded-full absolute left-[-62px] lg:left-[-108px] z-10">
+                    <div className="text-[25px] bg-[#F8F1DF] w-[44px] h-[44px] flex justify-center items-center rounded-full">
+                      04
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
+                      Reach more than 45 million diners
+                    </p>
+                    <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px]  mt-2">
+                      Acquire new customers by listing on the Bluedip
+                      marketplace. Build awareness for your brand and reach new
+                      customers directly via the app.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
