@@ -60,8 +60,8 @@ export default function TakeAwayTimeline() {
                     </div>
                   </div>
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image1.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
+                    url="/assets/images/takeaway-timeline-image1.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] ml-3 lg:ml-0"
                   />
                 </div>
               </div>
@@ -73,8 +73,8 @@ export default function TakeAwayTimeline() {
                 </div>
                 <div className="mt-4 lg:mt-0">
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image2.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
+                    url="/assets/images/takeaway-timeline-image2.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] ml-2 lg:ml-0"
                   />
                 </div>
                 <div className="relative mt-[35px] lg:mt-0">
@@ -85,7 +85,7 @@ export default function TakeAwayTimeline() {
                   </div>
                   <div>
                     <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
-                      Discreet & operationally seamless experience
+                      Seamlessly process orders including integrations
                     </p>
                     <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-4">
                       View an incoming order, select how long you need to
@@ -99,7 +99,7 @@ export default function TakeAwayTimeline() {
                           className=" w-[22px] h-[22px]"
                         />
                         <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Customer redeems your offer
+                          Access orders from your mobile or tablet
                         </p>
                       </div>
                       <div className="flex gap-2 items-center mt-2">
@@ -108,7 +108,7 @@ export default function TakeAwayTimeline() {
                           className=" w-[22px] h-[22px]"
                         />
                         <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Arrives & enjoys their meal
+                          Connect your existing printers
                         </p>
                       </div>
                       <div className="flex gap-2 items-center mt-2">
@@ -117,16 +117,7 @@ export default function TakeAwayTimeline() {
                           className=" w-[22px] h-[22px]"
                         />
                         <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Shows the voucher to avail the offer
-                        </p>
-                      </div>
-                      <div className="flex gap-2 items-center mt-2">
-                        <CustomImage
-                          url="/assets/images/tick.svg"
-                          className=" w-[22px] h-[22px]"
-                        />
-                        <p className="dm-sans text-[16px] lg:text-[20px] text-[#4D545F]">
-                          Taps & pays with their digital card
+                          Integrations with leading point of sales
                         </p>
                       </div>
                     </div>
@@ -151,8 +142,8 @@ export default function TakeAwayTimeline() {
                     </div>
                   </div>
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image3.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] lg:mb-[40px]"
+                    url="/assets/images/takeaway-timeline-image3.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] lg:mb-[40px] ml-6 lg:ml-0"
                   />
                 </div>
               </div>

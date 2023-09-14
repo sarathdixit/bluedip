@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Button from "@/modules/common/components/button/button";
 import DineinGrid from "@/modules/common/components/dineinGrid";
 import DineInTimeline from "@/modules/common/components/dineinTimeline";
@@ -59,8 +61,17 @@ export default function Dinein() {
           <DineinGrid />
         </div>
       </section>
-      <section className="py-[42px] lg:py-[120px]">
+      <section className="py-[42px] lg:py-[120px] text-center">
         <DineInTimeline />
+        <div className="border-[1px] border-[#989DA330]  hidden lg:block">
+          <div className="text-center m-auto max-w-[1033px] py-[40px]">
+            <img src="/assets/images/dinein-timline-grid.svg" />
+          </div>
+        </div>
+        <img
+          src="/assets/images/dinein-timline-grid-mobile.svg"
+          className="lg:hidden w-full"
+        />
       </section>
       {/* <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">
@@ -138,7 +149,7 @@ export default function Dinein() {
           </div>
         </div> */}
 
-        <div className="bg-[#FCF9F0] flex flex-col justify-between lg:flex-row max-w-[1267px] m-auto px-[42px] py-[34px]">
+        <div className="bg-[#FCF9F0] flex flex-col items-center  justify-between lg:flex-row max-w-[1267px] m-auto px-[42px] py-[34px]">
           <div className="flex flex-col lg:flex-row gap-6">
             <CustomImage
               url={"/assets/images/package.svg"}
@@ -148,7 +159,7 @@ export default function Dinein() {
               <p className="text-[32px] lg:text-[40px]  font-[400] leading-[47px] text-center lg:text-left">
                 Takeaway more revenue
               </p>
-              <p className="dm-sans text-center mt-4 lg:text-left">
+              <p className="dm-sans text-center mt-4 lg:text-left max-w-[450px] ">
                 Would love an increase in take-away orders? Our dynamic pricing
                 technology helps you do just that.
               </p>
@@ -158,6 +169,8 @@ export default function Dinein() {
             <Button
               title="Explore TakeAway"
               BtnClassName="mt-5 min-w-[170px]"
+              iconClassName={"h-[14px] w-[14px] ml-2"}
+              icon={"/assets/images/nextarrow.svg"}
             />
           </div>
         </div>

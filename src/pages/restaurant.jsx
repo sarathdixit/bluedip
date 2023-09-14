@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-key */
 import Button from "@/modules/common/components/button/button";
 import Faq from "@/modules/common/components/faq/faq";
 import CustomImage from "@/modules/common/components/image/image";
 import OverviewGird from "@/modules/common/components/overviewGrid";
 import OverViewTimeline from "@/modules/common/components/overviewTimeline";
 import Select from "@/modules/common/components/select/select";
+import { faqs } from "@/modules/common/constant";
 import React from "react";
 import Slider from "react-slick";
 
@@ -70,7 +72,7 @@ export default function Restaurant() {
           <p className="text-center font-[400] mt-4 text-[40px] lg:text-[62px] text-[#202937] leading-[47px] lg:leading-[74px]">
             AI-Powered Solution for Restaurant Success
           </p>
-          <p className="text-center font-[400] mt-4 dm-sans text-[20px] text-[#202937]">
+          <p className="text-center font-[500] mt-4 dm-sans text-[20px] text-[#202937]">
             Attract a vast audience of food enthusiasts nationwide and leverage
             dynamic pricing strategies to enhance your profit margins.
           </p>
@@ -186,18 +188,11 @@ export default function Restaurant() {
         <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
           Frequently asked Questions
         </p>
-        <div className="mt-6">
-          <Faq />
-        </div>
-        <div className="mt-6">
-          <Faq />
-        </div>
-        <div className="mt-6">
-          <Faq />
-        </div>
-        <div className="mt-6">
-          <Faq />
-        </div>
+        {faqs.map((res) => (
+          <div className="mt-6">
+            <Faq res={res} />
+          </div>
+        ))}
       </section>
     </main>
   );

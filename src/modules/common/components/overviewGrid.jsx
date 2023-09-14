@@ -6,21 +6,33 @@ export default function OverviewGird() {
     <div className="bg-white py-4 px-4 max-w-[1095px] m-auto rounded-lg flex justify-center">
       <div className="flex flex-col gap-4 lg:gap-9 lg:flex-row lg:w-[1002px] lg:justify-evenly ">
         <div className="flex items-center gap-3 max-w-[300px]">
-          <img src="/assets/images/overview-grid-image.svg" alt="" />
+          <img
+            src="/assets/images/overview-grid-image.svg"
+            alt=""
+            className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
+          />
           <p className="dm-sans text-[16px] font-[600]">
             Increase takeaway & dine-in demand
           </p>
         </div>
         <div className="h-[1px] lg:h-[64px] my-auto lg:w-[2px] bg-[#F5EEDD] "></div>
         <div className="flex items-center gap-3">
-          <img src="/assets/images/overview-grid-image2.svg" alt="" />
+          <img
+            src="/assets/images/overview-grid-image2.svg"
+            alt=""
+            className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
+          />
           <p className="dm-sans text-[16px] font-[600]">
             Industry&apos;s first software to create and predict future demand
           </p>
         </div>
         <div className="h-[1px] lg:h-[64px] my-auto lg:w-[2px] bg-[#F5EEDD] "></div>
         <div className="flex items-center gap-3 dm-sans">
-          <img src="/assets/images/overview-grid-image3.svg" alt="" />
+          <img
+            src="/assets/images/overview-grid-image3.svg"
+            alt=""
+            className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
+          />
           <p className="dm-sans text-[16px] font-[600]">
             Promote your venue to millions of customers
           </p>

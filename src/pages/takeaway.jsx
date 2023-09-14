@@ -42,7 +42,7 @@ export default function Takeaway() {
           <p className="text-center font-[400] mt-4 text-[40px] lg:text-[62px] text-[#202937] leading-[47px] lg:leading-[74px]">
             Boosting Revenue Through Strategic Takeaways
           </p>
-          <p className="text-center font-[400] mt-4 dm-sans text-[20px] text-[#202937]">
+          <p className="text-center font-[500] mt-4 dm-sans text-[20px] text-[#202937]">
             Increase takeaway revenue by posting offers and make sure customers
             only order when you choose to drive extra sales.
           </p>
@@ -138,7 +138,7 @@ export default function Takeaway() {
           </div>
         </div> */}
 
-        <div className="bg-[#FCF9F0] flex flex-col justify-between lg:flex-row  max-w-[1267px] m-auto px-[42px] py-[34px]">
+        <div className="bg-[#FCF9F0] flex flex-col justify-between items-center lg:flex-row  max-w-[1267px] m-auto px-[42px] py-[34px]">
           <div className="flex flex-col lg:flex-row gap-6">
             <CustomImage
               url={"/assets/images/dinein-vector-icon.svg"}
@@ -148,14 +148,19 @@ export default function Takeaway() {
               <p className="text-[32px] lg:text-[40px] font-[400] leading-[47px] text-center lg:text-left">
                 Never an empty venue
               </p>
-              <p className="dm-sans text-center mt-4 max-w-[354px] lg:text-left">
+              <p className="dm-sans text-center mt-4 max-w-[450px]  lg:text-left">
                 Find out how our Dynamic Pricing Marketplace can help increase
                 your dine-in at days and times you want.
               </p>
             </div>
           </div>
           <div>
-            <Button title="Explore Dine in" BtnClassName="mt-5 min-w-[170px]" />
+            <Button
+              title="Explore Dine in"
+              BtnClassName="mt-5 min-w-[170px]"
+              icon={"/assets/images/nextarrow.svg"}
+              iconClassName={"h-[14px] w-[14px] ml-2"}
+            />
           </div>
         </div>
       </section>

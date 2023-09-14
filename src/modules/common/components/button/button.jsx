@@ -18,19 +18,13 @@ export default function Button(props) {
   return (
     <button
       onClick={cta}
-      className={`bg-[#CCAB57] cursor-pointer flex items-center justify-center w-[100%] dm-sans  text-white text-[16px] leading-[24px] p-4 rounded-[1000px] font-[500] ${BtnClassName} ${
+      className={`bg-[#CCAB57] cursor-pointer flex items-center justify-center w-[100%] dm-sans  text-white text-[16px] leading-[24px] px-4 !py-[12px] rounded-[1000px] font-[500] ${BtnClassName} ${
         (disabled || loading) && disabledClass
       }`}
       disabled={disabled || loading}
       form={form}
       type={type}
     >
-      {icon && (
-        <div className={`relative mr-1 ${iconClassName}`}>
-          <Image src={icon} alt="icons" fill unoptimized />
-        </div>
-      )}
-
       {loading ? (
         <div
           className="w-5 h-5 rounded-full animate-spin
@@ -38,6 +32,11 @@ export default function Button(props) {
         ></div>
       ) : (
         <span>{title}</span>
+      )}
+      {icon && (
+        <div className={`relative ml-1 ${iconClassName}`}>
+          <Image src={icon} alt="icons" fill unoptimized />
+        </div>
       )}
     </button>
   );

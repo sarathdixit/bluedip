@@ -44,10 +44,10 @@ export default function DineInTimeline() {
             <div>
               <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px]">
                 <div className="mt-4 lg:mt-0">
-                  <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
+                  <p className="text-[#202937] text-left text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
                     Post exclusive offers to a world of new customers
                   </p>
-                  <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-2">
+                  <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] text-left mt-2">
                     Tailor offers to suit your business by setting the day, time
                     & offer percentage. See real-time predictions on how many
                     customers and revenue you’re likely to receive.
@@ -60,8 +60,8 @@ export default function DineInTimeline() {
                     </div>
                   </div>
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image1.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
+                    url="/assets/images/dinein-timeline-image.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] ml-3 lg:ml-0"
                   />
                 </div>
               </div>
@@ -73,8 +73,8 @@ export default function DineInTimeline() {
                 </div>
                 <div className="mt-4 lg:mt-0">
                   <CustomImage
-                    url="/assets/images/takeawat-timeline-image2.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px]"
+                    url="/assets/images/dinein-timeline-image2.svg"
+                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] ml-3 lg:ml-0"
                   />
                 </div>
                 <div className="relative mt-[35px] lg:mt-0">
@@ -83,11 +83,11 @@ export default function DineInTimeline() {
                       02
                     </div>
                   </div>
-                  <div>
-                    <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
+                  <div className="lg:pb-[120px]">
+                    <p className="text-[#202937] text-[20px] text-left lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
                       Discreet & operationally seamless experience
                     </p>
-                    <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px]  mt-2">
+                    <p className="dm-sans text-[#4D545F] text-left text-[16px] lg:text-[20px]  mt-2">
                       View an incoming order, select how long you need to
                       prepare and easily print the order straight to your
                       kitchen.
@@ -133,29 +133,6 @@ export default function DineInTimeline() {
                   </div>
                 </div>
               </div>
-              <div className="lg:mt-20 flex flex-col-reverse lg:flex-row lg:gap-[170px] mt-12 ">
-                <div className="mt-4 lg:mt-0">
-                  <p className="text-[#202937] text-[20px] lg:text-[32px] leading-[24px] lg:leading-[37.5px]">
-                    Control seamlessly from a central location
-                  </p>
-                  <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px]  mt-2  lg:mb-0">
-                    Manage your menu, mark items out of stock, update your
-                    offers or temporarily put things on pause, all from the
-                    convenience of our apps.
-                  </p>
-                </div>
-                <div className="relative">
-                  <div className=" bg-[#FCF9F0] w-[58px] h-[58px] flex justify-center items-center rounded-full absolute left-[-62px] lg:left-[-96px] z-10">
-                    <div className="text-[25px] bg-[#F8F1DF] w-[44px] h-[44px] flex justify-center items-center rounded-full">
-                      03
-                    </div>
-                  </div>
-                  <CustomImage
-                    url="/assets/images/takeawat-timeline-image3.svg"
-                    className=" w-[268px] h-[198px] lg:w-[480px] lg:h-[355px] lg:mb-[40px]"
-                  />
-                </div>
-              </div>
             </div>
             <div className="w-[1.6px] !h-full bg-[#989DA3] absolute top-0 left-[21px] lg:left-0 lg:m-auto lg:right-0">
               <motion.div
@@ -175,10 +152,10 @@ export default function DineInTimeline() {
           alt=""
           className="w-[45%] relative left-[1.28rem] lg:hidden"
         />
-        <div className="bg-[#D8B448] h-[2px] w-[12.5%] m-auto"></div>
+        {/* <div className="bg-[#D8B448] h-[2px] w-[12.5%] m-auto"></div>
         <p className="dm-sans text-[20px] text-[#202937] mt-2 text-center">
           Our Point of Sales
-        </p>
+        </p> */}
       </div>
     </>
   );

@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
           <div className="hidden lg:block">
             <div>
-              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
+              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] pb-1">
                 DOWNLOAD OUR APP
               </span>
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
         <div className="lg:hidden mt-8">
           <div>
-            <div className="text-[16px] font-[700] text-center w-[166px] m-auto text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
+            <div className="text-[16px] font-[700] text-center w-[166px] m-auto text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] pb-1">
               DOWNLOAD OUR APP
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="lg:flex items-center justify-between border-t  border-t-[#D9D9D92B]">
-        <p className="text-[16px] font-[400] text-center lg:text-left flex-1 text-[#FFF] dm-sans">
+        <p className="text-[16px] font-[400] text-center lg:text-left flex-1 text-[#FFF] dm-sans mt-4 lg:mt-0">
           © 2023 Bluedip
         </p>
         <div className="flex justify-center gap-4">
