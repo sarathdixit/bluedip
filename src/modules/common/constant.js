@@ -57,9 +57,9 @@ export const faqs = [
 	<li style="list-style-type:disc"><span ><span style="font-family:Calibri,sans-serif"><span >To simply attract extra customers all-day</span></span></span></li>
 </ul>
 
-<p style="margin-left:24px"><span ><span style="font-family:Calibri,sans-serif"><span >Also, before you&rsquo;ve even posted a deal to the Bluedip marketplace, our proprietary Artificial intelligence algorithm uses millions of data points to predict how many customers it will attract AND how much they&rsquo;ll spend.</span></span></span></p>
+<p><span ><span style="font-family:Calibri,sans-serif"><span >Also, before you&rsquo;ve even posted a deal to the Bluedip marketplace, our proprietary Artificial intelligence algorithm uses millions of data points to predict how many customers it will attract AND how much they&rsquo;ll spend.</span></span></span></p>
 
-<p style="margin-left:24px"><span ><span style="font-family:Calibri,sans-serif"><span >This revenue predictor makes it easy to understand the financial benefit to your bottom line of each type of deal you could post.</span></span></span></p>
+<p><span ><span style="font-family:Calibri,sans-serif"><span >This revenue predictor makes it easy to understand the financial benefit to your bottom line of each type of deal you could post.</span></span></span></p>
 
 <p >&nbsp;</p>
     </div>`,

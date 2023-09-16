@@ -84,10 +84,11 @@ export default function Restaurant() {
       </section>
       <section className="py-[42px] lg:py-[120px]">
         <OverViewTimeline />
+        <div className="mt-6">
+          <Comingsoon />
+        </div>
       </section>
-      <div className="lg:mb-[80px]">
-        <Comingsoon />
-      </div>
+
       {/* <section
         style={{
           backgroundImage: 'url("/assets/images/Restaurant-frame.svg")',
@@ -189,7 +190,7 @@ export default function Restaurant() {
       </section> */}
       <section className="px-4 py-[42px] lg:py-[120px]  bg-[#FDFBF5]">
         <div className="max-w-[1195px] m-auto">
-          <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px] mb-6 lg:mb-[60px]">
+          <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px] lg:leading-[52px] mb-6 lg:mb-[60px]">
             Frequently asked Questions
           </p>
           {faqs.map((res) => (

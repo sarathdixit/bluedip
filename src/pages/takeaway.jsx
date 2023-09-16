@@ -1,4 +1,5 @@
 import Button from "@/modules/common/components/button/button";
+import Comingsoon from "@/modules/common/components/comingSoon";
 import CustomImage from "@/modules/common/components/image/image";
 import TakeawayGrid from "@/modules/common/components/takeawayGrid";
 import TakeAwayTimeline from "@/modules/common/components/takeawayTimeline";
@@ -62,6 +63,9 @@ export default function Takeaway() {
       </section>
       <section className="py-[42px] lg:py-[120px]">
         <TakeAwayTimeline />
+        <div className="mt-6">
+          <Comingsoon />
+        </div>
       </section>
       {/* <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">

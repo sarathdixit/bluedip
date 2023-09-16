@@ -54,7 +54,7 @@ export default function Pricing() {
                 alt=""
                 className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
               />
-              <p className="text-[16px] lg:text-[32px]">
+              <p className="text-[16px] lg:text-[20px]">
                 Book your free consult today
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function Pricing() {
         </div>
       </section>
       <section
-        className=" pt-10 lg:py-[60px] px-4"
+        className=" pt-10 lg:py-[60px] lg:mt-[80px] px-4"
         style={{
           backgroundImage: 'url("/assets/images/image 16.png")',
           backgroundSize: "cover",
@@ -88,7 +88,7 @@ export default function Pricing() {
           hotels to maximize revenue. The platform utilizes flexible pricing to
           attract customers during off-peak hours. The goal is to maintain
           constant traffic in restaurants, ensuring fewer empty tables
-          throughout the day..
+          throughout the day.
         </p>
         <CustomImage
           url="/assets/images/dynamic-grid.svg"
@@ -99,7 +99,7 @@ export default function Pricing() {
           className="w-[100%] h-[216px] m-auto mt-12 lg:hidden"
         />
       </section>
-      <section className="px-4">
+      <section className="px-4 mt-10">
         <CustomImage
           url="/assets/images/dynamic-section.svg"
           className="w-[1203px] h-[1049px] m-auto mt-0 hidden lg:block"
@@ -114,7 +114,7 @@ export default function Pricing() {
         />
         <CustomImage
           url="/assets/images/dynamic-final-section-mobile.svg"
-          className="w-[full] h-[956px] m-auto mt-12 lg:hidden"
+          className="w-[full] h-[956px] m-auto mt-8 lg:hidden"
         />
       </section>
     </main>
