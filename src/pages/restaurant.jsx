@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Button from "@/modules/common/components/button/button";
+import Comingsoon from "@/modules/common/components/comingSoon";
 import Faq from "@/modules/common/components/faq/faq";
 import CustomImage from "@/modules/common/components/image/image";
 import OverviewGird from "@/modules/common/components/overviewGrid";
@@ -84,7 +85,9 @@ export default function Restaurant() {
       <section className="py-[42px] lg:py-[120px]">
         <OverViewTimeline />
       </section>
-
+      <div className="lg:mb-[80px]">
+        <Comingsoon />
+      </div>
       {/* <section
         style={{
           backgroundImage: 'url("/assets/images/Restaurant-frame.svg")',
@@ -184,15 +187,17 @@ export default function Restaurant() {
           />
         </div>
       </section> */}
-      <section className="mb-[140px] max-w-[1195px] px-4 m-auto">
-        <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px]mb-6 lg:mb-[60px]">
-          Frequently asked Questions
-        </p>
-        {faqs.map((res) => (
-          <div className="mt-6">
-            <Faq res={res} />
-          </div>
-        ))}
+      <section className="px-4 py-[42px] lg:py-[120px]  bg-[#FDFBF5]">
+        <div className="max-w-[1195px] m-auto">
+          <p className="text-center font-[400] text-[32px] lg:text-[48px] m-auto text-[#202937] leading-[74px] mb-6 lg:mb-[60px]">
+            Frequently asked Questions
+          </p>
+          {faqs.map((res) => (
+            <div className="mt-6">
+              <Faq res={res} />
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

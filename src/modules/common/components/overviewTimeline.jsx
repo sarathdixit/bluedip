@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CustomImage from "./image/image";
 import { ArrowRight } from "iconsax-react";
 import Link from "next/link";
+import Comingsoon from "./comingSoon";
 
 export default function OverViewTimeline() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -192,7 +193,7 @@ export default function OverViewTimeline() {
         />
         <div className="bg-[#D8B448] h-[2px] w-[12.5%] m-auto"></div>
         <p className="dm-sans text-[20px] text-[#202937] mt-2 text-center">
-          Our Point of Sales
+          Our Point of Sales Partners
         </p>
       </div>
     </>

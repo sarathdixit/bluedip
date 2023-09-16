@@ -49,7 +49,11 @@ export default function Pricing() {
         <div className="bg-white py-3 px-4 max-w-[905px] m-auto rounded-lg flex justify-center">
           <div className="flex flex-col gap-1 lg:gap-8 lg:!flex-row  justify-evenly lg:items-center">
             <div className="flex items-center gap-3 max-w-[500px]">
-              <img src="/assets/images/dinein-grid-image1.svg" alt="" />
+              <img
+                src="/assets/images/dinein-grid-image1.svg"
+                alt=""
+                className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
+              />
               <p className="text-[16px] lg:text-[32px]">
                 Book your free consult today
               </p>
@@ -58,7 +62,11 @@ export default function Pricing() {
               <Button
                 title="Get Started"
                 BtnClassName=" !bg-[#CCAB57] border lg:w-[200px]"
-                cta={() => handleNavigation("/")}
+                cta={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSdwthFELcWB2dafpGNjn9M9XaCq2DEOal5zeyaZ4BEyCa4F9A/viewform"
+                  )
+                }
               />
             </div>
           </div>

@@ -37,7 +37,7 @@ export default function TakeAwayTimeline() {
     <>
       <div className="lg:w-[1128px] m-auto px-4">
         <div>
-          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] leading-[64px] lg:text-[50px]">
+          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] leading-[42px] lg:leading-[64px] lg:text-[50px]">
             Make your profit consistent with Bluedip
           </p>
           <div className="relative h-full mt-8 lg:mt-20 pl-[56px]" id="info">
@@ -168,7 +168,7 @@ export default function TakeAwayTimeline() {
         />
         <div className="bg-[#D8B448] h-[2px] w-[12.5%] m-auto"></div>
         <p className="dm-sans text-[20px] text-[#202937] mt-2 text-center">
-          Our Point of Sales
+          Our Point of Sales Partners
         </p>
       </div>
     </>

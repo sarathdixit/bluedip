@@ -156,7 +156,7 @@ export default function Header() {
                       : "border-[#D8B448] text-[#D8B448] "
                   }`}
                 >
-                  Actions
+                  Solutions
                   <svg
                     class="hs-dropdown-open:rotate-180 w-2.5 h-2.5"
                     width="16"
@@ -272,6 +272,11 @@ export default function Header() {
             <Button
               title="Book A Consult"
               BtnClassName="w-[175px] p-0 h-[52px]"
+              cta={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdwthFELcWB2dafpGNjn9M9XaCq2DEOal5zeyaZ4BEyCa4F9A/viewform"
+                )
+              }
             />
           </div>
         )}

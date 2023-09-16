@@ -37,8 +37,8 @@ export default function DineInTimeline() {
     <>
       <div className="lg:w-[1128px] m-auto px-4">
         <div>
-          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px]  leading-[64px] lg:text-[50px]">
-            Make your profit consistent with Bluedip
+          <p className="text-center text-[#202937] max-w-[812px] m-auto text-[32px] leading-[42px] lg:leading-[64px] lg:text-[50px]">
+            Get More Customers with 2 Simple Steps
           </p>
           <div className="relative h-full mt-8 lg:mt-20 pl-[56px]" id="info">
             <div>

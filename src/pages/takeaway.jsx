@@ -2,6 +2,7 @@ import Button from "@/modules/common/components/button/button";
 import CustomImage from "@/modules/common/components/image/image";
 import TakeawayGrid from "@/modules/common/components/takeawayGrid";
 import TakeAwayTimeline from "@/modules/common/components/takeawayTimeline";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 
@@ -155,12 +156,14 @@ export default function Takeaway() {
             </div>
           </div>
           <div>
-            <Button
-              title="Explore Dine in"
-              BtnClassName="mt-5 min-w-[170px]"
-              icon={"/assets/images/nextarrow.svg"}
-              iconClassName={"h-[14px] w-[14px] ml-2"}
-            />
+            <Link href={"/dinein"}>
+              <Button
+                title="Explore Dine in"
+                BtnClassName="mt-5 min-w-[170px]"
+                icon={"/assets/images/nextarrow.svg"}
+                iconClassName={"h-[14px] w-[14px] ml-2"}
+              />
+            </Link>
           </div>
         </div>
       </section>
@@ -179,7 +182,11 @@ export default function Takeaway() {
         <Button
           title="Get Started"
           BtnClassName="w-[136px] m-auto mt-6"
-          cta={() => window.open("https://forms.gle/BdwnMgXne14QUSvf7")}
+          cta={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLSdwthFELcWB2dafpGNjn9M9XaCq2DEOal5zeyaZ4BEyCa4F9A/viewform"
+            )
+          }
         />
       </section>
     </main>

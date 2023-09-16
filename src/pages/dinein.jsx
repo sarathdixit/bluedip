@@ -4,6 +4,7 @@ import Button from "@/modules/common/components/button/button";
 import DineinGrid from "@/modules/common/components/dineinGrid";
 import DineInTimeline from "@/modules/common/components/dineinTimeline";
 import CustomImage from "@/modules/common/components/image/image";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 
@@ -166,12 +167,14 @@ export default function Dinein() {
             </div>
           </div>
           <div>
-            <Button
-              title="Explore TakeAway"
-              BtnClassName="mt-5 min-w-[170px]"
-              iconClassName={"h-[14px] w-[14px] ml-2"}
-              icon={"/assets/images/nextarrow.svg"}
-            />
+            <Link href={"/takeaway"}>
+              <Button
+                title="Explore TakeAway"
+                BtnClassName="mt-5 min-w-[170px]"
+                iconClassName={"h-[14px] w-[14px] ml-2"}
+                icon={"/assets/images/nextarrow.svg"}
+              />
+            </Link>
           </div>
         </div>
       </section>
@@ -183,15 +186,22 @@ export default function Dinein() {
         }}
         className="py-[42px]"
       >
-        <p className="text-[20px] px-4 text-center text-white max-w-[726px] m-auto lg:text-[32px]">
-          Book your free consult and get personalised strategies from a Bluedip
-          <span className="text-[#D8B448]"> Restaurant Consultant.</span>
-        </p>
-        <Button
-          title="Get Started"
-          BtnClassName="w-[136px] m-auto mt-6"
-          cta={() => window.open("https://forms.gle/ZazAXfXVkHmszEjb9")}
-        />
+        <div className="">
+          <p className="text-[20px] px-4 text-center text-white max-w-[726px] m-auto lg:text-[32px]">
+            Book your free consult and get personalised strategies from a
+            Bluedip
+            <span className="text-[#D8B448]"> Restaurant Consultant.</span>
+          </p>
+          <Button
+            title="Get Started"
+            BtnClassName="w-[136px] m-auto mt-6"
+            cta={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdwthFELcWB2dafpGNjn9M9XaCq2DEOal5zeyaZ4BEyCa4F9A/viewform"
+              )
+            }
+          />
+        </div>
       </section>
     </main>
   );

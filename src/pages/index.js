@@ -261,16 +261,16 @@ export default function Index() {
                     <div>
                       <CustomImage
                         url="/assets/images/vertical-timeline.svg"
-                        className="w-[50px] h-[224px]"
+                        className="w-[45px] lg:w-[50px] h-[224px]"
                       />
                     </div>
                     <div>
-                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-3">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-[24px] lg:mt-3">
                         Redeem a dine-in offer
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937]  mt-1">
                         Eat, drink, have a great time
                       </p>
                       <br />
@@ -286,23 +286,23 @@ export default function Index() {
               ) : (
                 <>
                   <p className="dm-sans text-[16px]  lg:text-[20px] text-[#202937] font-[500] mt-5">
-                    Choose your deals and Order from your phone . Enjoy the food
-                    in the comfort of your own home.
+                    Choose your deal, order from your phone and receive
+                    notifications when your food is ready to pick up.
                   </p>
-                  <div className="flex mt-10 gap-7">
+                  <div className="flex mt-4  lg:mt-10 gap-7">
                     <div>
                       <CustomImage
                         url="/assets/images/vertical-timeline.svg"
-                        className="w-[50px] h-[224px]"
+                        className="w-[45px] lg:w-[50px] h-[224px]"
                       />
                     </div>
                     <div>
-                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-3">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937]  mt-[24px] lg:mt-3">
                         Redeem a takeaway offer
                       </p>
                       <br />
                       <br />
-                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937] mt-5 lg:mt-1">
+                      <p className="dm-sans text-[16px] font-[500] lg:text-[20px] text-[#202937]  lg:mt-1">
                         Select items from the menu
                       </p>
                       <br />

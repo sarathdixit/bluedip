@@ -67,11 +67,11 @@ export default function Footer() {
           </div>
           <div className="hidden lg:block">
             <div>
-              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] pb-1">
+              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] lg:pb-4">
                 DOWNLOAD OUR APP
               </span>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 lg:pt-5">
               <CustomImage
                 url="/assets/images/App Store white.svg"
                 className="w-[158px] h-[48px]"
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
         <div className="lg:hidden mt-8">
           <div>
-            <div className="text-[16px] font-[700] text-center w-[166px] m-auto text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] pb-1">
+            <div className="text-[16px] font-[700] text-center w-[166px] m-auto text-[#FFF] dm-sans border-b-2 border-[#D8B448] pb-1">
               DOWNLOAD OUR APP
             </div>
           </div>
@@ -118,10 +118,19 @@ export default function Footer() {
             url="/assets/images/instagram.svg"
             className="w-[41px] h-[41px] mt-4"
           />
-          <CustomImage
-            url="/assets/images/linkedin.svg"
-            className="w-[41px] h-[41px] mt-4"
-          />
+          <div
+            className="cursor-pointer"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/company/bluedip/?viewAsMember=true"
+              )
+            }
+          >
+            <CustomImage
+              url="/assets/images/linkedin.svg"
+              className="w-[41px] h-[41px] mt-4"
+            />
+          </div>
         </div>
       </div>
     </footer>

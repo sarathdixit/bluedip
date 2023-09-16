@@ -1,0 +1,38 @@
+.slider {
+  //   height: 60px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slideTrack {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  //   height: 100px;
+  width: 250px;
+  font-size: 22px;
+  padding-bottom: 42px;
+}
+
+@media only screen and (min-width: 600px) {
+  .slide {
+    //   height: 100px;
+    width: 300px;
+    // color: "#4D545F" !important;
+    font-size: 25px;
+    // padding-bottom: 108px
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
