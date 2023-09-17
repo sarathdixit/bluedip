@@ -63,7 +63,7 @@ export default function Takeaway() {
       </section>
       <section className="py-[42px] lg:py-[120px]">
         <TakeAwayTimeline />
-        <div className="mt-6">
+        <div className="lg:w-[1128px] m-auto px-4 mt-6">
           <Comingsoon />
         </div>
       </section>

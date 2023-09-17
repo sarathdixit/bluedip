@@ -4,7 +4,7 @@ import CustomImage from "../image/image";
 export default function Faq({ res }) {
   const [isOpen, setIsopen] = useState(false);
   return (
-    <div className="border-solid bg-white border-[#E2DBCB] px-[16px] gap-4 lg:px-[64px] py-[32px] border-[1px] rounded-xl">
+    <div className="border-solid bg-white border-[#E2DBCB] px-[16px] gap-4 lg:px-[64px] py-[24px] lg:py-[32px] border-[1px] rounded-xl">
       <div
         className=" flex items-center justify-between"
         onClick={() => setIsopen((prev) => !prev)}

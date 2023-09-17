@@ -67,11 +67,11 @@ export default function Footer() {
           </div>
           <div className="hidden lg:block">
             <div>
-              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] lg:pb-4">
+              <span className="text-[16px] font-[700] flex-1 text-[#FFF] dm-sans border-b-2 border-[#D8B448] p-0 h-[52px] lg:pb-1">
                 DOWNLOAD OUR APP
               </span>
             </div>
-            <div className="mt-4 lg:pt-5">
+            <div className="mt-4">
               <CustomImage
                 url="/assets/images/App Store white.svg"
                 className="w-[158px] h-[48px]"

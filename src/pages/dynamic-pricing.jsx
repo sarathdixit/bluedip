@@ -54,7 +54,7 @@ export default function Pricing() {
                 alt=""
                 className="w-[42px] h-[42px] lg:w-[72px] lg:h-[72px]"
               />
-              <p className="text-[16px] lg:text-[20px]">
+              <p className="text-[20px] lg:text-[30px]">
                 Book your free consult today
               </p>
             </div>
