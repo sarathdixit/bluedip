@@ -20,7 +20,7 @@ export default function Header() {
         <Link href={"/"}>
           <CustomImage
             url="/assets/images/logo.svg"
-            className="w-[124px] h-[49px]"
+            className="w-[124px] h-[49px] lg:hidden"
           />
         </Link>
         <div onClick={() => setIsopen((prev) => !prev)}>
