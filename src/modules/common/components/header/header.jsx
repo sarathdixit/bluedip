@@ -17,10 +17,12 @@ export default function Header() {
   return (
     <header className="h-[80px] w-full bg-white">
       <div className="text-center px-4  h-[100%] flex justify-between lg:justify-center items-center">
-        <CustomImage
-          url="/assets/images/logo.svg"
-          className="w-[124px] h-[49px] mr-2"
-        />
+        <Link href={"/"}>
+          <CustomImage
+            url="/assets/images/logo.svg"
+            className="w-[124px] h-[49px]"
+          />
+        </Link>
         <div onClick={() => setIsopen((prev) => !prev)}>
           <CustomImage
             url={`/assets/images/${!isopen ? "menu" : "close"}.svg`}
@@ -121,13 +123,13 @@ export default function Header() {
       )}
       <div className="hidden lg:flex items-center justify-between px-20 absolute w-full top-3">
         {router.pathname == "/" ? (
-          <div>
+          <div className="w-[33%]">
             <span className="text-[16px] font-[700] flex-1 text-[#D8B448] dm-sans border-b-2 border-[#D8B448] pb-1">
               Customers
             </span>
           </div>
         ) : (
-          <div>
+          <div className="w-[33%]">
             <div className="flex gap-6 relative">
               {/* <div
                 className="flex gap-1 cursor-pointer"
@@ -249,9 +251,15 @@ export default function Header() {
             </div>
           </div>
         )}
+        <Link href={"/"}>
+          <CustomImage
+            url="/assets/images/logo.svg"
+            className="w-[124px] h-[49px]"
+          />
+        </Link>
 
         {router.pathname == "/" ? (
-          <div className="flex gap-4">
+          <div className="flex gap-4 w-[33%] justify-end">
             <Button
               title="I’M A Restaurant"
               BtnClassName="w-[187px]  !bg-transparent border border-[#CCAB57] !text-[#CCAB57] !p-0 h-[52px]"
@@ -263,7 +271,7 @@ export default function Header() {
             />
           </div>
         ) : (
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center w-[33%] justify-end">
             <Button
               title="I’M A Customer"
               BtnClassName="w-[187px]  !bg-transparent border border-[#CCAB57] !text-[#CCAB57] !p-0 h-[52px]"
