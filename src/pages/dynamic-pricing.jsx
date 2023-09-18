@@ -73,7 +73,7 @@ export default function Pricing() {
         </div>
       </section>
       <section
-        className=" pt-10 lg:py-[60px] lg:mt-[80px] px-4"
+        className=" pt-10 lg:py-[80px] lg:mt-[80px] px-4"
         style={{
           backgroundImage: 'url("/assets/images/image 16.png")',
           backgroundSize: "cover",
@@ -99,8 +99,8 @@ export default function Pricing() {
           className="w-[100%] h-[216px] m-auto mt-12 lg:hidden"
         />
       </section>
-      <section className="px-4 mt-10">
-        <CustomImage
+      <section className="px-4 mt-[80px]">
+        {/* <CustomImage
           url="/assets/images/dynamic-section.svg"
           className="w-[1203px] h-[1049px] m-auto mt-0 hidden lg:block"
         />
@@ -115,7 +115,92 @@ export default function Pricing() {
         <CustomImage
           url="/assets/images/dynamic-final-section-mobile.svg"
           className="w-[full] h-[956px] m-auto mt-8 lg:hidden"
-        />
+        /> */}
+        <div className="max-w-[1200px] m-auto">
+          <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[58px]">
+            How it can benefit your restaurant?
+          </p>
+          <div className="flex flex-col-reverse lg:flex-row lg:gap-[130px] items-center  lg:mt-[80px]">
+            <div className="w-[100%] lg:w-[50%]">
+              <p className="text-[20px] lg:text-[32px] text-[#202937]">
+                Optimise everyday of the week
+              </p>
+              <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-2">
+                It comes as no surprise that some days are more popular than
+                others. With Bluedip, that doesn’t have to be the case. Millions
+                of customers are wanting to eat out early in the week, just not
+                at the same price they pay on Friday and Saturday. Using Bluedip
+                turns traditionally loss leading days into profit generating
+                ones while supercharging already profitable days.
+              </p>
+            </div>
+            <div className="w-[100%] lg:w-[50%]">
+              <CustomImage
+                url="/assets/images/dynami-timeline-image.svg"
+                className="w-full lg:max-w-[557.5px] h-[312px] m-auto lg:mt-8 "
+              />
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row  lg:gap-[130px] items-center lg:mt-[80px]">
+            <div className="w-[100%] lg:w-[50%]">
+              <CustomImage
+                url="/assets/images/dynami-timeline-image.svg"
+                className="w-[100%] h-[312px] m-auto lg:mt-8 "
+              />
+            </div>
+            <div className="w-[100%] lg:w-[50%]">
+              <p className="text-[20px] lg:text-[32px] text-[#202937]">
+                Optimise targeted times
+              </p>
+              <p className="dm-sans text-[#4D545F] text-[16px] lg:text-[20px] mt-2">
+                Every restaurant is faced with peak and off peak times during
+                the day. Adding extra revenue before and after these peak times
+                without adjusting your staffing will have huge impacts on your
+                profitability. Let alone benefits like filling window seats
+                before dinner service encouraging walk-ins or keeping the
+                atmosphere rolling as the night gets on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-[60px]  lg:my-[120px]">
+        <div className="max-w-[1200px] m-auto">
+          <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[58px]">
+            How it works on the Bluedip platform
+          </p>
+          <div className="lg:flex gap-[68px] px-[16px] lg:px-0 mt-[60px]">
+            <div className="border-[1px] border-[#d8b4488a] py-[24px] px-[20px] lg:px-[33px] lg:py-[30px] rounded-[10px]">
+              <CustomImage
+                url="/assets/images/bluedip-grid-image.svg"
+                className="w-full lg:w-[481px] h-[226.429px] lg:h-[342px] m-auto"
+              />
+              <div className="w-[99%] mt-[24px] lg:mt-[30px]">
+                <p className="text-[20px] lg:text-[32px] text-[#202937]">
+                  Targeted dynamic pricing
+                </p>
+                <p className="dm-sans text-[#929496] text-[16px] lg:text-[20px] mt-2">
+                  Choose your own days and times with accurate AI predictions.
+                </p>
+              </div>
+            </div>
+            <div className="border-[1px] border-[#d8b4488a] py-[24px] px-[20px] lg:px-[33px] lg:py-[30px] rounded-[10px] mt-[32px] lg:mt-0">
+              <CustomImage
+                url="/assets/images/bluedip-grid-image2.svg"
+                className="w-full lg:w-[481px] h-[226.429px] lg:h-[342px] m-auto"
+              />
+              <div className="w-[99%] mt-[24px] lg:mt-[30px]">
+                <p className="text-[20px] lg:text-[32px] text-[#202937]">
+                  Optimise targeted times
+                </p>
+                <p className="dm-sans text-[#929496] text-[16px] lg:text-[20px] mt-2">
+                  It&apos;s no surprise that some days are more popular than
+                  others. That doesn&apos;t have to be the case with Bluedip.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

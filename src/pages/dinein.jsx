@@ -64,15 +64,70 @@ export default function Dinein() {
       </section>
       <section className="py-[42px] lg:py-[120px] text-center">
         <DineInTimeline />
-        <div className="border-[1px] border-[#989DA330]  hidden lg:block">
-          <div className="text-center m-auto max-w-[1033px] py-[40px]">
+        <div className="border-[1px] border-[#989DA330] ">
+          {/* <div className="text-center m-auto max-w-[1033px] py-[40px]">
             <img src="/assets/images/dinein-timline-grid.svg" />
+          </div> */}
+          <div className="lg:flex max-w-[1033px] gap-[150px] px-[16px] lg:px-0 justify-center m-auto py-[40px]">
+            <div>
+              <div className="">
+                <img
+                  src="/assets/images/dinein-timeline-grid-image.svg"
+                  alt=""
+                  className="m-auto lg:ml-0"
+                />
+              </div>
+              <div>
+                <p className="text-[20px] text-center lg:text-left">
+                  No staff training
+                </p>
+                <p className="text-[16px] dm-sans text-[#929496] text-center lg:text-left">
+                  Head to the app store and be up and running within minutes.
+                </p>
+              </div>
+            </div>
+            <div className="mt-6 lg:mt-0">
+              <div className="text-center">
+                <img
+                  src="/assets/images/dinein-timeline-grid-image2.svg"
+                  alt=""
+                  className="m-auto lg:ml-0"
+                />
+              </div>
+              <div>
+                <p className="text-[20px] text-center  lg:text-left">
+                  Complete control
+                </p>
+                <p className="text-[16px] dm-sans text-[#929496]  text-center lg:text-left">
+                  Put offers up, hit the pause button or take them down if
+                  you’re getting too busy.
+                </p>
+              </div>
+            </div>
+            <div className="mt-6 lg:mt-0">
+              <div className="text-center">
+                <img
+                  src="/assets/images/dinein-timeline-grid-image3.svg"
+                  alt=""
+                  className="m-auto lg:ml-0"
+                />
+              </div>
+              <div>
+                <p className="text-[20px] text-center lg:text-left">
+                  Real-time visibility
+                </p>
+                <p className="text-[16px] dm-sans text-[#929496] text-center lg:text-left">
+                  Digital dashboards and weekly reporting gives you instant
+                  access and oversight.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <img
+        {/* <img
           src="/assets/images/dinein-timline-grid-mobile.svg"
           className="lg:hidden w-full"
-        />
+        /> */}
       </section>
       {/* <section className="bg-[#FCF9F0] py-10 lg:py-[60px] px-4">
         <p className="text-center font-[400] text-[32px] lg:text-[48px] lg:w-[520px] m-auto text-[#202937] leading-[47px] lg:leading-[74px]">
